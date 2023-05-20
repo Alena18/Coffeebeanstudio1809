@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+_q$*0&xasn0#2x&fdf)v60z^#^2%07n+$7t&o2t=^o_w^us6r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-alena18-coffeebeanstudio-twv6fmblai.us2.codeanyapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-alena18-coffeebeanstudio-fazkmkcnhq.us2.codeanyapp.com', 'localhost']
 
 
 # Application definition
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'coffeebeanstudio1809'
+    'design',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +59,8 @@ ROOT_URLCONF = 'coffeebeanstudio1809.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+        os.path.join(BASE_DIR, 'templates', 'allauth')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
