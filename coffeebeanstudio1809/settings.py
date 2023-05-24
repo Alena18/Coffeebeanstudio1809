@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-+_q$*0&xasn0#2x&fdf)v60z^#^2%07n+$7t&o2t=^o_w^us6r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-alena18-coffeebeanstudio-fazkmkcnhq.us2.codeanyapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-alena18-coffeebeanstudio-x3obrcfpke.us2.codeanyapp.com', 'localhost']
 
 
 # Application definition
