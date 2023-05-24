@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+Telugu:wght@300&family=Tangerine:wght@700&display=swap');
 
 body {
-  background-color: #fefcfa;
-  font-family: Tangerine, sans-serif;
-  font-weight: 700;
-  font-size: 250%;
-  color: #ab8240;
+    background-color: #fefcfa;
+    font-family: Tangerine, sans-serif;
+    font-weight: 700;
+    font-size: 250%;
+    color: #ab8240;
 
 }
 
 #logo {
     width: 5em;
 }
+
 .alltext {
-  font-family: "Bebas Neue", serif;
-  font-size: 1.5rem;
-  color: #42250F;
-  letter-spacing: .1vw;
+    font-family: "Bebas Neue", serif;
+    font-size: 1.5rem;
+    color: #42250F;
+    letter-spacing: .1vw;
 }
 
 .margin-promsolution {
@@ -34,7 +35,36 @@ body {
     letter-spacing: .1vw;
 }
 
-#clothing-link, #all-products-link, #homeware-link, #specials-link {
+#banner-link,
+#all-products-link,
+#badges-link,
+#clothing-link,
+#mugs-link,
+#golf-link {
     color: #42250F;
 
+}
+
+.contacts {
+    color: #42250F;
+    font-size: 2.5vw;
+    position: fixed;
+    bottom: 0;
+    margin-left: 75%;
+}
+
+.socialmedia-gap {
+    margin-left: 7px;
+}
+
+.contact-email {
+    font-size: 2.5vw;
+    clear: both;
+    float: right;
+}
+
+.font-number {
+    font-family: "Bebas Neue", Tangerine, sans-serif;
+    font-weight: 100;
+    font-size: 1.2vw;
 }
