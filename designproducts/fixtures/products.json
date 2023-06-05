@@ -1,7 +1,7 @@
 [
     {
       "pk": 1,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340155",
         "name": "Banners",
@@ -9,13 +9,13 @@
         "price": 18,
         "category": 1,
         "rating": 5,
-        "image_url": "{% static 'media/banners.jpg' %}",
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966245/banners_bqujkv.jpg",
         "image": ""
       }
     },
     {
       "pk": 2,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340156",
         "name": "Posters",
@@ -23,13 +23,13 @@
         "price": 25,
         "category": 1,
         "rating": 5,
-        "image_url": "{% static 'media/posters.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966244/posters_c9m7q2.jpg"
       }
     }
     ,
     {
       "pk": 3,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340157",
         "name": "Signs",
@@ -37,13 +37,13 @@
         "price": 25,
         "category": 1,
         "rating": 5,
-        "image_url": "{% static 'media/signs.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966246/signs_co2miw.jpg"
       }
     }
     ,
     {
       "pk": 4,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340158",
         "name": "Business cards",
@@ -51,12 +51,12 @@
         "price": 25,
         "category": 2,
         "rating": 5,
-        "image_url": "{% static 'media/busincards.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/busincards_etbelp.jpg"
       }
     },
     {
       "pk": 5,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340159",
         "name": "Badges",
@@ -64,12 +64,12 @@
         "price": 15,
         "category": 2,
         "rating": 5,
-        "image_url": "{% static 'media/badges.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/badges_dalvyc.jpg"
       }
     },
     {
       "pk": 6,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340160",
         "name": "Lanyards",
@@ -77,12 +77,12 @@
         "price": 25,
         "category": 2,
         "rating": 5,
-        "image_url": "{% static 'media/lanyards.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/lanyards_x1bipd.jpg"
       }
     },
     {
       "pk": 7,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340161",
         "name": "Bags",
@@ -90,12 +90,12 @@
         "price": 15,
         "category": 3,
         "rating": 5,
-        "image_url": "{% static 'media/bags.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/bags_ejyn64.jpg"
       }
     },
     {
       "pk": 8,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340162",
         "name": "Tshirts",
@@ -103,12 +103,12 @@
         "price": 20,
         "category": 3,
         "rating": 5,
-        "image_url": "{% static 'media/tshirts.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966344/tshirts_y09mri.jpg"
       }
     },
     {
       "pk": 9,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340163",
         "name": "Aprons",
@@ -116,12 +116,12 @@
         "price": 15,
         "category": 3,
         "rating": 5,
-        "image_url": "{% static 'media/aprons.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/aprons_luuuxb.jpg"
       }
     },
     {
       "pk": 10,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340164",
         "name": "Hats",
@@ -129,12 +129,12 @@
         "price": 25,
         "category": 3,
         "rating": 5,
-        "image_url": "{% static 'media/hats.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966246/hats_ol28p9.jpg"
       }
     },
     {
       "pk": 11,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340165",
         "name": "Pillows",
@@ -142,12 +142,12 @@
         "price": 25,
         "category": 3,
         "rating": 5,
-        "image_url": "{% static 'media/pillow.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pillow_fbwata.jpg"
       }
     },
     {
       "pk": 12,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340166",
         "name": "Mugs",
@@ -155,12 +155,12 @@
         "price": 20,
         "category": 4,
         "rating": 5,
-        "image_url": "{% static 'media/banners.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/mugs_wxgax2.jpg"
       }
     },
     {
       "pk": 13,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340167",
         "name": "Drink bottles",
@@ -168,12 +168,12 @@
         "price": 10,
         "category": 4,
         "rating": 5,
-        "image_url": "{% static 'media/drinkbottles.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966244/drinkbottles_a6qyl4.jpg"
       }
     },
     {
       "pk": 14,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340168",
         "name": "Keyrings",
@@ -181,12 +181,12 @@
         "price": 25,
         "category": 4,
         "rating": 5,
-        "image_url": "{% static 'media/keyrings.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/keyrings_lll6co.jpg"
       }
     },
     {
       "pk": 15,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340169",
         "name": "Pens",
@@ -194,12 +194,12 @@
         "price": 20,
         "category": 4,
         "rating": 5,
-        "image_url": "{% static 'media/pens.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pens_dfa211.jpg"
       }
     },
     {
       "pk": 16,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340170",
         "name": "Coasters",
@@ -207,12 +207,12 @@
         "price": 25,
         "category": 4,
         "rating": 5,
-        "image_url": "{% static 'media/coaster.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/coaster_yhmnhq.jpg"
       }
     },
     {
       "pk": 17,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340171",
         "name": "Golf umbrellas",
@@ -220,12 +220,12 @@
         "price": 25,
         "category": 5,
         "rating": 5,
-        "image_url": "{% static 'media/umbrella.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966343/umbrella_ydmxnj.jpg"
       }
     },
     {
       "pk": 18,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340172",
         "name": "Golf balls",
@@ -233,12 +233,12 @@
         "price": 25,
         "category": 5,
         "rating": 5,
-        "image_url": "{% static 'media/golfball.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/golfball_pqywed.jpg"
       }
     },
     {
       "pk": 19,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340173",
         "name": "Towels",
@@ -246,13 +246,13 @@
         "price": 25,
         "category": 5,
         "rating": 5,
-        "image_url": "{% static 'media/towel.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/towel_xmxafl.jpg"
       }
     }
     ,
     {
       "pk": 20,
-      "model": "designproducts.design",
+      "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340173",
         "name": "Golf forks",
@@ -260,7 +260,7 @@
         "price": 25,
         "category": 5,
         "rating": 5,
-        "image_url": "{% static 'media/pitchfork.jpg' %}"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pitchfork_t6rfcv.jpg"
       }
     }
   ]
