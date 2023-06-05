@@ -1,0 +1,266 @@
+[
+    {
+      "pk": 1,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "Banners",
+        "description": "Any type of banners include outdoor banners, pull-up banners, birthday banners, feather drop banners, etc. ",
+        "price": 18,
+        "category": 1,
+        "rating": 5,
+        "image_url": "{% static 'media/banners.jpg' %}",
+        "image": ""
+      }
+    },
+    {
+      "pk": 2,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340156",
+        "name": "Posters",
+        "description": "Any type of posters, include leaflets, business custom pages for stationery needs, post cards, etc.",
+        "price": 25,
+        "category": 1,
+        "rating": 5,
+        "image_url": "{% static 'media/posters.jpg' %}"
+      }
+    }
+    ,
+    {
+      "pk": 3,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340157",
+        "name": "Signs",
+        "description": "Any type of signs, include shop hours signs, shop outdoor advert, sticker signs, etc.",
+        "price": 25,
+        "category": 1,
+        "rating": 5,
+        "image_url": "{% static 'media/signs.jpg' %}"
+      }
+    }
+    ,
+    {
+      "pk": 4,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340158",
+        "name": "Business cards",
+        "description": "Any type of business cards, include different format and size",
+        "price": 25,
+        "category": 2,
+        "rating": 5,
+        "image_url": "{% static 'media/busincards.jpg' %}"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340159",
+        "name": "Badges",
+        "description": "Any type of badges, include conference badges any size and type, metal badges for stuff, hen, stug, party, birthday badges etc.",
+        "price": 15,
+        "category": 2,
+        "rating": 5,
+        "image_url": "{% static 'media/badges.jpg' %}"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340160",
+        "name": "Lanyards",
+        "description": "Any type of lanyards",
+        "price": 25,
+        "category": 2,
+        "rating": 5,
+        "image_url": "{% static 'media/lanyards.jpg' %}"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340161",
+        "name": "Bags",
+        "description": "Any type of bags that have cotton surface, include gym sacks, cotton bags, paper bags, backpacks, barrel bags etc.",
+        "price": 15,
+        "category": 3,
+        "rating": 5,
+        "image_url": "{% static 'media/bags.jpg' %}"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340162",
+        "name": "Tshirts",
+        "description": "Any type and size of clothes, include polo, long or short sleeve, hi-vis jackets, jersey, also shorts, dresses, baby gown, medical clothing, etc.",
+        "price": 20,
+        "category": 3,
+        "rating": 5,
+        "image_url": "{% static 'media/tshirts.jpg' %}"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340163",
+        "name": "Aprons",
+        "description": "Any type of aprons or chef coats etc.",
+        "price": 15,
+        "category": 3,
+        "rating": 5,
+        "image_url": "{% static 'media/aprons.jpg' %}"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340164",
+        "name": "Hats",
+        "description": "Any type of hats, include chef hats, beanie, caps etc.",
+        "price": 25,
+        "category": 3,
+        "rating": 5,
+        "image_url": "{% static 'media/hats.jpg' %}"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340165",
+        "name": "Pillows",
+        "description": "Any type of pillows, include cushions, duvet cover etc.",
+        "price": 25,
+        "category": 3,
+        "rating": 5,
+        "image_url": "{% static 'media/pillow.jpg' %}"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340166",
+        "name": "Mugs",
+        "description": "Mugs depend on print production",
+        "price": 20,
+        "category": 4,
+        "rating": 5,
+        "image_url": "{% static 'media/banners.jpg' %}"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340167",
+        "name": "Drink bottles",
+        "description": "Drink bottles depend on print production",
+        "price": 10,
+        "category": 4,
+        "rating": 5,
+        "image_url": "{% static 'media/drinkbottles.jpg' %}"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340168",
+        "name": "Keyrings",
+        "description": "Any type of keyrings, include rectangular, square, bottle opener etc.",
+        "price": 25,
+        "category": 4,
+        "rating": 5,
+        "image_url": "{% static 'media/keyrings.jpg' %}"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340169",
+        "name": "Pens",
+        "description": "Any type of pens and pencils, depends on print production",
+        "price": 20,
+        "category": 4,
+        "rating": 5,
+        "image_url": "{% static 'media/pens.jpg' %}"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340170",
+        "name": "Coasters",
+        "description": "Any type and shape of coasters",
+        "price": 25,
+        "category": 4,
+        "rating": 5,
+        "image_url": "{% static 'media/coaster.jpg' %}"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340171",
+        "name": "Golf umbrellas",
+        "description": "Any colours of umbrellas",
+        "price": 25,
+        "category": 5,
+        "rating": 5,
+        "image_url": "{% static 'media/umbrella.jpg' %}"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340172",
+        "name": "Golf balls",
+        "description": "Golf balls and golf accessories, include visors, clothes etc.",
+        "price": 25,
+        "category": 5,
+        "rating": 5,
+        "image_url": "{% static 'media/golfball.jpg' %}"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340173",
+        "name": "Towels",
+        "description": "Any type, size and colour of towels",
+        "price": 25,
+        "category": 5,
+        "rating": 5,
+        "image_url": "{% static 'media/towel.jpg' %}"
+      }
+    }
+    ,
+    {
+      "pk": 20,
+      "model": "designproducts.design",
+      "fields": {
+        "sku": "pp5001340173",
+        "name": "Golf forks",
+        "description": "Golf forks and golf accessories",
+        "price": 25,
+        "category": 5,
+        "rating": 5,
+        "image_url": "{% static 'media/pitchfork.jpg' %}"
+      }
+    }
+  ]
