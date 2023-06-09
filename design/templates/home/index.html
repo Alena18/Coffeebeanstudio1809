@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
+    <div>
         <div class="row">
             <div class="col"></div>
         </div>
@@ -10,17 +10,13 @@
 {% endblock %}
 
 {% block content %}
+<img src="{% static 'media/turn.jpg' %}" id="backgroundimg">
 <div class="container margin-promsolution">
-    <div class="col-7 col-md my-auto">
-        <h1 class="display-4">
-            Promotional Products Design Solution
-        </h1>
-        <br>
+    <div class="col-md my-auto">
         <h4>
-            <a href="" class="shop-now-button btn btn-lg rounded-8 text-uppercase alltext">Shop Now</a>
+            <a href="{% url 'designproducts'%}" class="shop-now-button btn btn-lg rounded-8 text-uppercase alltext">Shop Now</a>
         </h4>
         </div>
     </div>
 </div>
-<img src="{% static 'media/turn.jpg' %}" id="backgroundimg">
 {% endblock %}

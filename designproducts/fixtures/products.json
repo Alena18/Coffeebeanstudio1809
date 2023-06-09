@@ -10,7 +10,7 @@
         "category": 1,
         "rating": 5,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966245/banners_bqujkv.jpg",
-        "image": ""
+        "image": "banners.jpg"
       }
     },
     {
@@ -23,7 +23,8 @@
         "price": 25,
         "category": 1,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966244/posters_c9m7q2.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966244/posters_c9m7q2.jpg",
+        "image": "posters.jpg"
       }
     }
     ,
@@ -37,7 +38,8 @@
         "price": 25,
         "category": 1,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966246/signs_co2miw.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966246/signs_co2miw.jpg",
+        "image": "signs.jpg"
       }
     }
     ,
@@ -51,7 +53,8 @@
         "price": 25,
         "category": 2,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/busincards_etbelp.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/busincards_etbelp.jpg",
+        "image": "busincards.jpg"
       }
     },
     {
@@ -64,7 +67,8 @@
         "price": 15,
         "category": 2,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/badges_dalvyc.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/badges_dalvyc.jpg",
+        "image": "badges.jpg"
       }
     },
     {
@@ -77,7 +81,8 @@
         "price": 25,
         "category": 2,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/lanyards_x1bipd.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/lanyards_x1bipd.jpg",
+        "image": "lanyards.jpg"
       }
     },
     {
@@ -90,7 +95,8 @@
         "price": 15,
         "category": 3,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/bags_ejyn64.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/bags_ejyn64.jpg",
+        "image": "bags.jpg"
       }
     },
     {
@@ -103,7 +109,8 @@
         "price": 20,
         "category": 3,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966344/tshirts_y09mri.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966344/tshirts_y09mri.jpg",
+        "image": "tshirts.jpg"
       }
     },
     {
@@ -116,7 +123,8 @@
         "price": 15,
         "category": 3,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/aprons_luuuxb.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/aprons_luuuxb.jpg",
+        "image": "aprons.jpg"
       }
     },
     {
@@ -129,7 +137,8 @@
         "price": 25,
         "category": 3,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966246/hats_ol28p9.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966246/hats_ol28p9.jpg",
+        "image": "hats.jpg"
       }
     },
     {
@@ -142,7 +151,8 @@
         "price": 25,
         "category": 3,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pillow_fbwata.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pillow_fbwata.jpg",
+        "image": "pillow.jpg"
       }
     },
     {
@@ -155,7 +165,8 @@
         "price": 20,
         "category": 4,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/mugs_wxgax2.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/mugs_wxgax2.jpg",
+        "image": "mugs.jpg"
       }
     },
     {
@@ -168,7 +179,8 @@
         "price": 10,
         "category": 4,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966244/drinkbottles_a6qyl4.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966244/drinkbottles_a6qyl4.jpg",
+        "image": "drinkbottles.jpg"
       }
     },
     {
@@ -181,7 +193,8 @@
         "price": 25,
         "category": 4,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/keyrings_lll6co.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/keyrings_lll6co.jpg",
+        "image": "keyrings.jpg"
       }
     },
     {
@@ -194,7 +207,8 @@
         "price": 20,
         "category": 4,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pens_dfa211.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pens_dfa211.jpg",
+        "image": "pens.jpg"
       }
     },
     {
@@ -207,7 +221,8 @@
         "price": 25,
         "category": 4,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/coaster_yhmnhq.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/coaster_yhmnhq.jpg",
+        "image": "coaster.jpg"
       }
     },
     {
@@ -220,7 +235,8 @@
         "price": 25,
         "category": 5,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966343/umbrella_ydmxnj.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966343/umbrella_ydmxnj.jpg",
+        "image": "umbrella.jpg"
       }
     },
     {
@@ -233,7 +249,8 @@
         "price": 25,
         "category": 5,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/golfball_pqywed.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/golfball_pqywed.jpg",
+        "image": "golfball.jpg"
       }
     },
     {
@@ -246,7 +263,8 @@
         "price": 25,
         "category": 5,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/towel_xmxafl.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/towel_xmxafl.jpg",
+        "image": "towel.jpg"
       }
     }
     ,
@@ -260,7 +278,8 @@
         "price": 25,
         "category": 5,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pitchfork_t6rfcv.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pitchfork_t6rfcv.jpg",
+        "image": "pitchfork.jpg"
       }
     }
   ]

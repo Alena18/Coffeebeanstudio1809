@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+Telugu:wght@300&family=Tangerine:wght@700&display=swap');
 
 body {
+    margin-top: 2%;
     background-color: #fefcfa;
     font-family: Tangerine, sans-serif;
     font-weight: 700;
-    font-size: 250%;
+    font-size: 200%;
     color: #ab8240;
 
 }
 
 #logo {
-    width: 5em;
+    width: 3em;
 }
 
 .alltext {
@@ -26,6 +27,8 @@ body {
 }
 
 .shop-now-button {
+    margin-top: -160%;
+    background-color: #fefcfa;
     border-color: #42250F;
 }
 
@@ -78,3 +81,44 @@ body {
     width:100%;
     opacity: 0.2;
 }
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+/* shop button */
+@media (max-width: 1450px) {
+    .shop-now-button {
+        margin-top: -100%;
+        
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 992px) {
+    .header-container {
+        padding-top: 116px;
+    }
+    body {
+        height: calc(100vh - 116px);
+    }
+    .mob-collapse {
+        display: none;
+    }
+}
+
+/*  */
+@media (max-width: 700px) {
+
+    .promtext {
+        font-size: 0.9rem;
+    }
+}
+
+
