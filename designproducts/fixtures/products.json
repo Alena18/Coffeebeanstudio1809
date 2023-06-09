@@ -21,8 +21,8 @@
         "name": "Posters",
         "description": "Any type of posters, include leaflets, business custom pages for stationery needs, post cards, etc.",
         "price": 25,
-        "category": 1,
-        "rating": 5,
+        "category": 2,
+        "rating": 4.5,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966244/posters_c9m7q2.jpg",
         "image": "posters.jpg"
       }
@@ -36,39 +36,39 @@
         "name": "Signs",
         "description": "Any type of signs, include shop hours signs, shop outdoor advert, sticker signs, etc.",
         "price": 25,
-        "category": 1,
-        "rating": 5,
+        "category": 3,
+        "rating": 4.8,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966246/signs_co2miw.jpg",
         "image": "signs.jpg"
       }
     }
     ,
     {
-      "pk": 4,
-      "model": "designproducts.product",
-      "fields": {
-        "sku": "pp5001340158",
-        "name": "Business cards",
-        "description": "Any type of business cards, include different format and size",
-        "price": 25,
-        "category": 2,
-        "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/busincards_etbelp.jpg",
-        "image": "busincards.jpg"
-      }
-    },
+        "pk": 4,
+        "model": "designproducts.product",
+        "fields": {
+          "sku": "pp5001340158",
+          "name": "Badges",
+          "description": "Any type of badges, include conference badges any size and type, metal badges for stuff, hen, stug, party, birthday badges etc.",
+          "price": 15,
+          "category": 4,
+          "rating": 5,
+          "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/badges_dalvyc.jpg",
+          "image": "badges.jpg"
+        }
+      },
     {
       "pk": 5,
       "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340159",
-        "name": "Badges",
-        "description": "Any type of badges, include conference badges any size and type, metal badges for stuff, hen, stug, party, birthday badges etc.",
-        "price": 15,
-        "category": 2,
+        "name": "Business cards",
+        "description": "Any type of business cards, include different format and size",
+        "price": 25,
+        "category": 4.8,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/badges_dalvyc.jpg",
-        "image": "badges.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/busincards_etbelp.jpg",
+        "image": "busincards.jpg"
       }
     },
     {
@@ -79,96 +79,96 @@
         "name": "Lanyards",
         "description": "Any type of lanyards",
         "price": 25,
-        "category": 2,
-        "rating": 5,
+        "category": 6,
+        "rating": 4.3,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/lanyards_x1bipd.jpg",
         "image": "lanyards.jpg"
       }
     },
     {
-      "pk": 7,
+        "pk": 7,
+        "model": "designproducts.product",
+        "fields": {
+          "sku": "pp5001340161",
+          "name": "Aprons",
+          "description": "Any type of aprons or chef coats etc.",
+          "price": 15,
+          "category": 7,
+          "rating": 3.8,
+          "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/aprons_luuuxb.jpg",
+          "image": "aprons.jpg"
+        }
+      },
+    {
+      "pk": 8,
       "model": "designproducts.product",
       "fields": {
-        "sku": "pp5001340161",
+        "sku": "pp5001340162",
         "name": "Bags",
         "description": "Any type of bags that have cotton surface, include gym sacks, cotton bags, paper bags, backpacks, barrel bags etc.",
         "price": 15,
-        "category": 3,
+        "category": 8,
         "rating": 5,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/bags_ejyn64.jpg",
         "image": "bags.jpg"
       }
     },
     {
-      "pk": 8,
-      "model": "designproducts.product",
-      "fields": {
-        "sku": "pp5001340162",
-        "name": "Tshirts",
-        "description": "Any type and size of clothes, include polo, long or short sleeve, hi-vis jackets, jersey, also shorts, dresses, baby gown, medical clothing, etc.",
-        "price": 20,
-        "category": 3,
-        "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966344/tshirts_y09mri.jpg",
-        "image": "tshirts.jpg"
-      }
-    },
-    {
-      "pk": 9,
-      "model": "designproducts.product",
-      "fields": {
-        "sku": "pp5001340163",
-        "name": "Aprons",
-        "description": "Any type of aprons or chef coats etc.",
-        "price": 15,
-        "category": 3,
-        "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/aprons_luuuxb.jpg",
-        "image": "aprons.jpg"
-      }
-    },
+        "pk": 9,
+        "model": "designproducts.product",
+        "fields": {
+          "sku": "pp5001340163",
+          "name": "Hats",
+          "description": "Any type of hats, include chef hats, beanie, caps etc.",
+          "price": 25,
+          "category": 9,
+          "rating": 4.5,
+          "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966246/hats_ol28p9.jpg",
+          "image": "hats.jpg"
+        }
+      },
     {
       "pk": 10,
       "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340164",
-        "name": "Hats",
-        "description": "Any type of hats, include chef hats, beanie, caps etc.",
-        "price": 25,
-        "category": 3,
-        "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966246/hats_ol28p9.jpg",
-        "image": "hats.jpg"
-      }
-    },
-    {
-      "pk": 11,
-      "model": "designproducts.product",
-      "fields": {
-        "sku": "pp5001340165",
         "name": "Pillows",
         "description": "Any type of pillows, include cushions, duvet cover etc.",
         "price": 25,
-        "category": 3,
-        "rating": 5,
+        "category": 10,
+        "rating": 4.1,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pillow_fbwata.jpg",
         "image": "pillow.jpg"
       }
     },
     {
-      "pk": 12,
-      "model": "designproducts.product",
-      "fields": {
-        "sku": "pp5001340166",
-        "name": "Mugs",
-        "description": "Mugs depend on print production",
-        "price": 20,
-        "category": 4,
-        "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/mugs_wxgax2.jpg",
-        "image": "mugs.jpg"
-      }
-    },
+        "pk": 11,
+        "model": "designproducts.product",
+        "fields": {
+          "sku": "pp5001340165",
+          "name": "Tshirts",
+          "description": "Any type and size of clothes, include polo, long or short sleeve, hi-vis jackets, jersey, also shorts, dresses, baby gown, medical clothing, etc.",
+          "price": 20,
+          "category": 11,
+          "rating": 4,
+          "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966344/tshirts_y09mri.jpg",
+          "image": "tshirts.jpg"
+        }
+      },
+      {
+        "pk": 12,
+        "model": "designproducts.product",
+        "fields": {
+          "sku": "pp5001340166",
+          "name": "Coasters",
+          "description": "Any type and shape of coasters",
+          "price": 15,
+          "category": 12,
+          "rating": 4.3,
+          "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/coaster_yhmnhq.jpg",
+          "image": "coaster.jpg"
+        }
+      },
     {
       "pk": 13,
       "model": "designproducts.product",
@@ -177,8 +177,8 @@
         "name": "Drink bottles",
         "description": "Drink bottles depend on print production",
         "price": 10,
-        "category": 4,
-        "rating": 5,
+        "category": 13,
+        "rating": 4.4,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966244/drinkbottles_a6qyl4.jpg",
         "image": "drinkbottles.jpg"
       }
@@ -191,66 +191,66 @@
         "name": "Keyrings",
         "description": "Any type of keyrings, include rectangular, square, bottle opener etc.",
         "price": 25,
-        "category": 4,
-        "rating": 5,
+        "category": 14,
+        "rating": 3.7,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/keyrings_lll6co.jpg",
         "image": "keyrings.jpg"
       }
     },
     {
-      "pk": 15,
-      "model": "designproducts.product",
-      "fields": {
-        "sku": "pp5001340169",
-        "name": "Pens",
-        "description": "Any type of pens and pencils, depends on print production",
-        "price": 20,
-        "category": 4,
-        "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pens_dfa211.jpg",
-        "image": "pens.jpg"
-      }
-    },
+        "pk": 15,
+        "model": "designproducts.product",
+        "fields": {
+          "sku": "pp5001340169",
+          "name": "Mugs",
+          "description": "Mugs depend on print production",
+          "price": 20,
+          "category": 15,
+          "rating": 5,
+          "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/mugs_wxgax2.jpg",
+          "image": "mugs.jpg"
+        }
+      },
     {
       "pk": 16,
       "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340170",
-        "name": "Coasters",
-        "description": "Any type and shape of coasters",
-        "price": 25,
-        "category": 4,
-        "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/coaster_yhmnhq.jpg",
-        "image": "coaster.jpg"
+        "name": "Pens",
+        "description": "Any type of pens and pencils, depends on print production",
+        "price": 20,
+        "category": 16,
+        "rating": 3.5,
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pens_dfa211.jpg",
+        "image": "pens.jpg"
       }
     },
     {
-      "pk": 17,
-      "model": "designproducts.product",
-      "fields": {
-        "sku": "pp5001340171",
-        "name": "Golf umbrellas",
-        "description": "Any colours of umbrellas",
-        "price": 25,
-        "category": 5,
-        "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966343/umbrella_ydmxnj.jpg",
-        "image": "umbrella.jpg"
-      }
-    },
+        "pk": 17,
+        "model": "designproducts.product",
+        "fields": {
+          "sku": "pp5001340171",
+          "name": "Golf balls",
+          "description": "Golf balls and golf accessories, include visors, clothes etc.",
+          "price": 25,
+          "category": 17,
+          "rating": 4.5,
+          "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/golfball_pqywed.jpg",
+          "image": "golfball.jpg"
+        }
+      },
     {
       "pk": 18,
       "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340172",
-        "name": "Golf balls",
-        "description": "Golf balls and golf accessories, include visors, clothes etc.",
+        "name": "Golf umbrellas",
+        "description": "Any colours of umbrellas",
         "price": 25,
-        "category": 5,
+        "category": 18,
         "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/golfball_pqywed.jpg",
-        "image": "golfball.jpg"
+        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966343/umbrella_ydmxnj.jpg",
+        "image": "umbrella.jpg"
       }
     },
     {
@@ -258,28 +258,27 @@
       "model": "designproducts.product",
       "fields": {
         "sku": "pp5001340173",
-        "name": "Towels",
-        "description": "Any type, size and colour of towels",
-        "price": 25,
-        "category": 5,
-        "rating": 5,
-        "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/towel_xmxafl.jpg",
-        "image": "towel.jpg"
-      }
-    }
-    ,
-    {
-      "pk": 20,
-      "model": "designproducts.product",
-      "fields": {
-        "sku": "pp5001340173",
-        "name": "Golf forks",
+        "name": "Pitch forks",
         "description": "Golf forks and golf accessories",
         "price": 25,
-        "category": 5,
-        "rating": 5,
+        "category": 19,
+        "rating": 4.5,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966241/pitchfork_t6rfcv.jpg",
         "image": "pitchfork.jpg"
       }
-    }
-  ]
+    },
+    {
+        "pk": 20,
+        "model": "designproducts.product",
+        "fields": {
+          "sku": "pp5001340174",
+          "name": "Towels",
+          "description": "Any type, size and colour of towels",
+          "price": 15,
+          "category": 20,
+          "rating": 4.6,
+          "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966242/towel_xmxafl.jpg",
+          "image": "towel.jpg"
+        }
+      }
+]

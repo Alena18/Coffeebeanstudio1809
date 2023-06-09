@@ -1,1 +1,194 @@
-[{"pk": 1, "model": "designproducts.category", "fields": {"name": "banners_and_posters", "friendly_name": "Banners & Posters"}}, {"pk": 2, "model": "designproducts.category", "fields": {"name": "badges_and_lanyards", "friendly_name": "Badges & Lanyards"}}, {"pk": 3, "model": "designproducts.category", "fields": {"name": "bags_and_clothing", "friendly_name": "Bags & Clothing"}}, {"pk": 4, "model": "designproducts.category", "fields": {"name": "mags_and_giveaways", "friendly_name": "Mags & Giveaways"}}, {"pk": 5, "model": "designproducts.category", "fields": {"name": "golf_products", "friendly_name": "Golf products"}}]
+[
+  {
+    "pk": 1,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "banners",
+      "friendly_name": "Banners"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "posters",
+      "friendly_name": "Posters"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "signs",
+      "friendly_name": "Signs"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "badges",
+      "friendly_name": "Badges"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "businesscards",
+      "friendly_name": "Businesscards"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "posters",
+      "friendly_name": "Posters"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "signs",
+      "friendly_name": "Signs"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "businesscards",
+      "friendly_name": "Business Cards"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "badges",
+      "friendly_name": "Badges"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "lanyards",
+      "friendly_name": "Lanyards"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "aprons",
+      "friendly_name": "Aprons"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "bags",
+      "friendly_name": "Bags"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "hats",
+      "friendly_name": "Hats"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "pillows",
+      "friendly_name": "Pillows"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "tshirts",
+      "friendly_name": "Tshirts"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "coasters",
+      "friendly_name": "Coasters"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "drinkbottles",
+      "friendly_name": "Drink bottles"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "keyrings",
+      "friendly_name": "Keyrings"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "mugs",
+      "friendly_name": "Mugs"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "pens",
+      "friendly_name": "Pens"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "golfballs",
+      "friendly_name": "Golf balls"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "golfumbrellas",
+      "friendly_name": "Golf umbrellas"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "pitchforks",
+      "friendly_name": "Pitch forks"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "designproducts.category",
+    "fields": {
+      "name": "towels",
+      "friendly_name": "Towels"
+    }
+  }
+]

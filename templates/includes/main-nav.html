@@ -6,9 +6,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'designproducts' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'designproducts' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'designproducts' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'designproducts'%}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -20,10 +20,10 @@
                 Banners &amp; Posters
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="banner-link">
-                <a href="" class="dropdown-item">Banners</a>
-                <a href="" class="dropdown-item">Posters</a>
-                <a href="" class="dropdown-item">Signs</a>
-                <a href="" class="dropdown-item">All Banners</a>
+                <a href="{% url 'designproducts'%}?category=banners" class="dropdown-item">Banners</a>
+                <a href="{% url 'designproducts'%}?category=posters" class="dropdown-item">Posters</a>
+                <a href="{% url 'designproducts'%}?category=signs" class="dropdown-item">Signs</a>
+                <a href="{% url 'designproducts'%}?category=banners,posters,signs" class="dropdown-item">All Banners</a>
             </div>
         </li>
     </ul>
@@ -34,10 +34,10 @@
                 Badges &amp; Lanyards
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="badges-link">
-                <a href="" class="dropdown-item">Business cards</a>
-                <a href="" class="dropdown-item">Badges</a>
-                <a href="" class="dropdown-item">Lanyards</a>
-                <a href="" class="dropdown-item">All Badges</a>
+                <a href="{% url 'designproducts'%}?category=badges" class="dropdown-item">Badges</a>
+                <a href="{% url 'designproducts'%}?category=businesscards" class="dropdown-item">Business cards</a>                
+                <a href="{% url 'designproducts'%}?category=lanyards" class="dropdown-item">Lanyards</a>
+                <a href="{% url 'designproducts'%}?category=badges,businesscards,lanyards" class="dropdown-item">All Badges</a>
             </div>
         </li>
     </ul>
@@ -48,11 +48,12 @@
                 Bags &amp; Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Bags</a>
-                <a href="" class="dropdown-item">Tshirts</a>
-                <a href="" class="dropdown-item">Aprons</a>
-                <a href="" class="dropdown-item">Hats</a>
-                <a href="" class="dropdown-item">Pillows</a>
+                <a href="{% url 'designproducts'%}?category=aprons" class="dropdown-item">Aprons</a>
+                <a href="{% url 'designproducts'%}?category=bags" class="dropdown-item">Bags</a>                
+                <a href="{% url 'designproducts'%}?category=hats" class="dropdown-item">Hats</a>
+                <a href="{% url 'designproducts'%}?category=pillows" class="dropdown-item">Pillows</a>
+                <a href="{% url 'designproducts'%}?category=tshirts" class="dropdown-item">Tshirts</a>
+                <a href="{% url 'designproducts'%}?category=aprons,bags,hats,pillows,tshirts" class="dropdown-item">Bags &amp; Clothing</a>
             </div>
         </li>
     </ul>
@@ -62,12 +63,14 @@
                 aria-haspopup="true" aria-expanded="false">
                 Mugs &amp; Giveaways
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="mugs-link">
-                <a href="" class="dropdown-item">Mugs</a>
-                <a href="" class="dropdown-item">Drink bottles</a>
-                <a href="" class="dropdown-item">Keyrings</a>
-                <a href="" class="dropdown-item">Pens</a>
-                <a href="" class="dropdown-item">Coasters</a>
+            <div class="dropdown-menu border-0" aria-labelledby="mugs-link">                
+                <a href="{% url 'designproducts'%}?category=coasters" class="dropdown-item">Coasters</a>
+                <a href="{% url 'designproducts'%}?category=drinkbottles" class="dropdown-item">Drink bottles</a>
+                <a href="{% url 'designproducts'%}?category=keyrings" class="dropdown-item">Keyrings</a>
+                <a href="{% url 'designproducts'%}?category=mugs" class="dropdown-item">Mugs</a>
+                <a href="{% url 'designproducts'%}?category=pens" class="dropdown-item">Pens</a>
+                <a href="{% url 'designproducts'%}?category=coasters,drinkbottles,keyrings,mugs,pens" class="dropdown-item">All Mugs &amp; Giveaways</a>
+                
             </div>
         </li>
     </ul>
@@ -77,11 +80,12 @@
                 aria-haspopup="true" aria-expanded="false">
                 Golf products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="golf-link">
-                <a href="" class="dropdown-item">Golf umbrellas</a>
-                <a href="" class="dropdown-item">Golf balls</a>
-                <a href="" class="dropdown-item">Towels</a>
-                <a href="" class="dropdown-item">Golf forks</a>
+            <div class="dropdown-menu border-0" aria-labelledby="golf-link">                
+                <a href="{% url 'designproducts'%}?category=golfballs" class="dropdown-item">Golf balls</a>
+                <a href="{% url 'designproducts'%}?category=golfumbrellas" class="dropdown-item">Golf umbrellas</a>                
+                <a href="{% url 'designproducts'%}?category=pitchforks" class="dropdown-item">Pitch forks</a>
+                <a href="{% url 'designproducts'%}?category=towels" class="dropdown-item">Towels</a>
+                <a href="{% url 'designproducts'%}?category=golfballs,golfumbrellas,pitchforks,towels" class="dropdown-item">All Golf Products</a>
             </div>
         </li>
     </ul>
