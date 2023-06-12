@@ -92,6 +92,11 @@ body {
 	z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: #ab8240 !important;
+    color: #fefcfa !important;
+}
+
 /* shop button */
 @media (max-width: 1450px) {
     .shop-now-button {
