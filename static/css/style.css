@@ -21,6 +21,14 @@ body {
     letter-spacing: .1vw;
 }
 
+.light_brown {
+    color: #ab8240;
+}
+
+.light_brown:hover {
+    color: #42250F;
+}
+
 .margin-promsolution {
     margin-top: 1%;
     text-align: center;
@@ -35,6 +43,7 @@ body {
 .btn {
     background-color: #fefcfa;
     border-color: #42250F;
+    color: #42250F;
 }
 
 .dropdown-item {
@@ -61,7 +70,7 @@ body {
     }
 
 .contacts:hover,
-.alltext:hover {
+.btn:hover {
     color: #ab8240;
 }
 

@@ -63,24 +63,24 @@
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ designproduct.name }}">
                                 </a>
                                 {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ designproduct.name }}</p>
+                                <div class="alltext card-body pb-0">
+                                    <p class="mb-0 text-center">{{ designproduct.name }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ designproduct.price }}</p>
+                                            <p class="alltext lead mb-0 text-left font-weight-bold text-center">€{{ designproduct.price }}</p>
                                             {% if designproduct.category %}
                                             <p class="small mt-1 mb-0">
-                                                <a class="alltext" href="{% url 'designproducts' %}?category={{ designproduct.category.name }}">
+                                                <a class ="light_brown" href="{% url 'designproducts' %}?category={{ designproduct.category.name }}">
                                                     <i class="fas fa-tag mr-1"></i>{{ designproduct.category.friendly_name }}
                                                 </a>
                                             </p>
                                             {% endif %}
                                             {% if designproduct.rating %}
-                                                <small class="alltext"><i class="fas fa-star mr-1"></i>{{ designproduct.rating }} / 5</small>
+                                                <small ><i class="fas fa-star mr-1"></i>{{ designproduct.rating }} / 5</small>
                                             {% else %}
-                                                <small class="alltext">No Rating</small>
+                                                <small >No Rating</small>
                                             {% endif %}
                                         </div>
                                     </div>
