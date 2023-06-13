@@ -32,6 +32,11 @@ body {
     border-color: #42250F;
 }
 
+.btn {
+    background-color: #fefcfa;
+    border-color: #42250F;
+}
+
 .dropdown-item {
     font-family: "Bebas Neue", serif;
     color: #42250F;
@@ -95,6 +100,10 @@ body {
 a.category-badge > span.badge:hover {
     background: #ab8240 !important;
     color: #fefcfa !important;
+}
+
+.margin-top {
+     margin-top: 2%;
 }
 
 /* shop button */
