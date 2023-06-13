@@ -57,12 +57,11 @@ body {
     padding: 1%;
     color: #42250F;
     font-size: 2.5vw;
-    position: fixed;
     bottom: 0;
-    margin-left: 75%;
-}
+    }
 
-.contacts:hover {
+.contacts:hover,
+.alltext:hover {
     color: #ab8240;
 }
 
