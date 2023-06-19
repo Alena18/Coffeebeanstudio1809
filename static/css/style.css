@@ -46,6 +46,12 @@ body {
     color: #42250F;
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor:pointer;
+}
+
 .dropdown-item {
     font-family: "Bebas Neue", serif;
     color: #42250F;
