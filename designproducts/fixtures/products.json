@@ -65,7 +65,7 @@
         "name": "Business cards",
         "description": "Any type of business cards, include different format and size",
         "price": 25,
-        "category": 4.8,
+        "category": 5,
         "rating": 5,
         "image_url": "https://res.cloudinary.com/dmie5ezad/image/upload/v1685966243/busincards_etbelp.jpg",
         "image": "busincards.jpg"
