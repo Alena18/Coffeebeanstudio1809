@@ -4,7 +4,7 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-from desingproducts.models import Product
+from designproducts.models import Product
 from bag.contexts import bag_contents
 
 import stripe
@@ -33,11 +33,11 @@ def checkout(request):
             order = order_form.save()
             for item_id, item_data in bag.items():
                 try:
-                    desingproduct = Product.objects.get(id=item_id)
+                    designproduct = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
-                            desingproduct=desingproduct,
+                            designproduct=designproduct,
                             quantity=item_data,
                         )
                         order_line_item.save()
@@ -45,7 +45,7 @@ def checkout(request):
                         for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
-                                desingproduct=desingproduct,
+                                designproduct=designproduct,
                                 quantity=quantity,
                                 product_size=size,
                             )
