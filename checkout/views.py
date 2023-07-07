@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
+from django.utils.safestring import mark_safe
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -100,9 +101,10 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
-    messages.success(request, f'Order successfully processed! \
-        Your order number is {order_number}. \
-        A confirmation email will be sent to {order.email}.')
+    messages.success(request, mark_safe(f'Order successfully processed!<br/>\
+        Your order number is<br/>{order_number}.<br/>\
+        A confirmation email will be sent to {order.email}.'
+                    ))
 
     if 'bag' in request.session:
         del request.session['bag']

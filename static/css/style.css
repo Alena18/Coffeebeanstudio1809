@@ -166,14 +166,14 @@ a.category-badge > span.badge:hover {
 }
 
 .arrow-danger {
-    border-bottom-color: #52060d !important;
+    border-bottom-color: #8e0715 !important;
 }
 
 .bg-danger {
-    background-color: #52060d !important;
+    background-color: #8e0715 !important;
 }
 .redtext {
-    color: #52060d;
+    color: #8e0715;
 }
 .bag-notification-wrapper {
     height: 100px;
