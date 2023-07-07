@@ -137,6 +137,12 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
+.sizetworem {
+    font-size: 2rem;
+}
+.sizeonerem {
+    font-size: 1rem;
+}
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -150,38 +156,25 @@ a.category-badge > span.badge:hover {
 }
 
 /* Convenience classes - colors copied from Bootstrap */
-.arrow-primary {
-    border-bottom-color: #007bff !important;
+.arrow-primary, .arrow-secondary, .arrow-success, 
+.arrow-warning, .arrow-info, .arrow-light, .arrow-dark {
+    border-bottom-color: #ab8240 !important;
 }
 
-.arrow-secondary {
-    border-bottom-color: #6c757d !important;
-}
-
-.arrow-success {
-    border-bottom-color: #28a745 !important;
+.bg-success {
+    background-color: #ab8240 !important;
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 !important;
+    border-bottom-color: #52060d !important;
 }
 
-.arrow-warning {
-    border-bottom-color: #ffc107 !important;
+.bg-danger {
+    background-color: #52060d !important;
 }
-
-.arrow-info {
-    border-bottom-color: #17a2b8 !important;
+.redtext {
+    color: #52060d;
 }
-
-.arrow-light {
-    border-bottom-color: #f8f9fa !important;
-}
-
-.arrow-dark {
-    border-bottom-color: #343a40 !important;
-}
-
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
