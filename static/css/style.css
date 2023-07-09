@@ -122,6 +122,10 @@ a.category-badge > span.badge:hover {
      margin-top: 2%;
 }
 
+.margin-top-five {
+    margin-top: 5%;
+}
+
 .message-container {
     position: fixed;
     top: 72px;
@@ -140,9 +144,15 @@ a.category-badge > span.badge:hover {
 .sizetworem {
     font-size: 2rem;
 }
+
 .sizeonerem {
     font-size: 1rem;
 }
+
+.sizethreerem {
+    font-size: 3rem;
+}
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -161,7 +171,7 @@ a.category-badge > span.badge:hover {
     border-bottom-color: #ab8240 !important;
 }
 
-.bg-success {
+.bg-success, .bg-info {
     background-color: #ab8240 !important;
 }
 
@@ -202,12 +212,126 @@ a.category-badge > span.badge:hover {
     }
 }
 
-/*  */
+/* Allauth form formatting */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #42250F; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fefcfa;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #42250F;
+    border: 1px solid #42250F;
+    padding: .375rem .75rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: 8;
+
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #42250F;
+    background-color: #ab8240;
+    border-color: #ab8240;
+}
+
+.allauth-form-inner-content a {
+	color: #ab8240; /* text-info */
+}
+
+label {
+    display: block;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bec5cc;
+    opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #bec5cc;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #bec5cc;
+}
+
+#id_email, #id_email2, #id_username,
+#id_password1, #id_password2 {
+    width: 50%;
+    color: #000;
+    border: 1px solid #000;
+    font-size: 1rem;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+}
+
+#confirmemail {
+    margin-left: 46%;
+}
+
+#forgotpassword {
+    font-family: Tangerine, sans-serif;
+}
+/* Media */
+
+@media (max-width: 980px) {
+
+    #id_email, #id_email2, #id_username,
+    #id_password1, #id_password2 {
+        width: 75%;
+    }
+}
+
 @media (max-width: 700px) {
 
     .promtext {
         font-size: 0.9rem;
     }
+
+    #confirmemail {
+        margin-left: 40%;
+    }
 }
 
+@media (max-width: 400px) {
 
+    #id_email, #id_email2, #id_username,
+    #id_password1, #id_password2 {
+        width: 90%;
+    }
+}
