@@ -58,6 +58,10 @@ body {
     letter-spacing: .1vw;
 }
 
+.dropdown-item:hover{
+    color: #ab8240;
+}
+
 #banner-link,
 #all-products-link,
 #badges-link,
@@ -191,6 +195,14 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+a {
+    color: #42250F;
+}
+
+a:hover {
+    color: #ab8240;
+}
+
 /* shop button */
 @media (max-width: 1450px) {
     .shop-now-button {
@@ -307,6 +319,36 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 #forgotpassword {
     font-family: Tangerine, sans-serif;
 }
+
+/* Product Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #8e0715;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #8e0715;
+    border-color: #8e0715;
+    border-radius: 0;
+}
+
+
 /* Media */
 
 @media (max-width: 980px) {
