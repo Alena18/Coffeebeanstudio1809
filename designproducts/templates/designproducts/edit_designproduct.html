@@ -15,20 +15,20 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
-                <h2 class="logo-font mb-4 sizethreerem">Order Management</h2>
-                <h5 class="alltext">Add a Product</h5>
+                <h2 class="logo-font mb-4">Order Management</h2>
+                <h5 class="text-muted">Edit a Product</h5>
                 <hr>
             </div>
         </div>
 
-        <div class="row alltext">
+        <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_designproduct' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'edit_designproduct' designproduct.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">
-                        <a class="btn btn-outline-black rounded-8 alltext" href="{% url 'designproducts' %}">Cancel</a>
-                        <button class="btn btn-black rounded-8 alltext" type="submit">Add Product</button>
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'designproducts' %}">Cancel</a>
+                        <button class="btn btn-black rounded-0" type="submit">Update Product</button>
                     </div>
                 </form>
             </div>            

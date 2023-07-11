@@ -39,11 +39,18 @@
                     {% for item in bag_items %}
                     <tr class="alltext">
                         <td class="pr-5 pt-3 mb-2 w-25">
-                            <img class="img-fluid rounded" src="{{ item.designproduct.image_url }}">
+                            {% if item.product.image %}
+                            <img class="img-fluid rounded" src="{{ item.product.image_url }}"
+                                alt="{{ item.product.name }}">
+                            {% else %}
+                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ item.product.name }}">
+                            {% endif %}
                         </td>
                         <td class="py-3">
                             <p class="my-0"><strong>{{ item.designproduct.name }}</strong></p>
-                            <p class="my-0"><strong>Size: </strong>{% if item.designproduct.has_sizes %}{{ item.size|upper }}{% else %} N/A {% endif %}</p>
+                            <p class="my-0"><strong>Size: </strong>{% if item.designproduct.has_sizes %}{{
+                                item.size|upper }}{% else %} N/A {% endif %}</p>
                             <p class="my-0 small">SKU: {{ item.designproduct.sku|upper }}</p>
                         </td>
                         <td class="py-3">
@@ -81,10 +88,10 @@
                             </form>
                             <a class="update-link"><small class="light_brown">Update</small></a>
                             <a class="remove-item float-right" id="remove_{{ item.item_id }}"
-                            data-product_size="{{ item.size }}"><small class="light_brown">Remove</small></a>
+                                data-product_size="{{ item.size }}"><small class="light_brown">Remove</small></a>
                         </td>
                         <td class="py-3">
-                            <p class="my-0">€{{ item.designproduct.price | calc_subtotal:item.quantity  }}</p>
+                            <p class="my-0">€{{ item.designproduct.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
