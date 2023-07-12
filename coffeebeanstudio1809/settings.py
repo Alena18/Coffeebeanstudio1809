@@ -29,7 +29,10 @@ SECRET_KEY = 'django-insecure-+_q$*0&xasn0#2x&fdf)v60z^#^2%07n+$7t&o2t=^o_w^us6r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-alena18-coffeebeanstudio-x3obrcfpke.us2.codeanyapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com/',
+                '8000-alena18-coffeebeanstudio-x3obrcfpke.us2.codeanyapp.com',
+                'localhost'
+                ]
 
 
 # Application definition
@@ -115,15 +118,19 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 # Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
-
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

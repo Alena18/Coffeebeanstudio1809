@@ -1,0 +1,1 @@
+web: gunicorn coffeebeanstudio1809.wsgi:application
