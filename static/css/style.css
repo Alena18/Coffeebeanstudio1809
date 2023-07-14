@@ -130,6 +130,10 @@ a.category-badge > span.badge:hover {
     margin-top: 5%;
 }
 
+.margin-top-threerem {
+    margin-top: 3rem;
+}
+
 .message-container {
     position: fixed;
     top: 72px;
@@ -145,12 +149,12 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
-.sizetworem {
-    font-size: 2rem;
-}
-
 .sizeonerem {
     font-size: 1rem;
+}
+
+.sizetworem {
+    font-size: 2rem;
 }
 
 .sizethreerem {
@@ -316,7 +320,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     margin-left: 46%;
 }
 
-#forgotpassword {
+#forgotpassword, .bodyfont {
     font-family: Tangerine, sans-serif;
 }
 
