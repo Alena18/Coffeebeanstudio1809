@@ -207,6 +207,16 @@ a:hover {
     color: #ab8240;
 }
 
+#returntoshop {
+    color: #ab8240;
+    background-color: #42250F;
+}
+
+#returntoshop:hover {
+    color: #42250F;
+    background-color: #ab8240;
+}
+
 /* shop button */
 @media (max-width: 1450px) {
     .shop-now-button {
