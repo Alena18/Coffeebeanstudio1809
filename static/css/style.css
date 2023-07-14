@@ -354,13 +354,16 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #btnreturn {
+    color: #ab8240;
     background-color: #42250F;
     border-color: #42250F;
 }
 
 .btnreturn:hover {
-    background-color:#ab8240;
+    color: #42250F;
+    background-color: #ab8240;
     border-color: #ab8240;
+    text-decoration: none;
 }
 
 /* Media */
