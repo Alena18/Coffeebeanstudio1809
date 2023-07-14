@@ -355,8 +355,9 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 .btnreturn {
     background-color: #42250F;
-    font-weight: 400;
+    border-color: #42250F;
     display: inline-block;
+    font-weight: 400;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -370,6 +371,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 .btnreturn:hover {
     background-color:#ab8240;
+    border-color: #ab8240;
 }
 
 /* Media */
