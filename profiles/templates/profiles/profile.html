@@ -58,9 +58,9 @@
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}
                                                 <li class="small">
-                                                    {% if item.product.has_sizes %}
-                                                        Size {{ item.product.size|upper }}
-                                                    {% endif %}{{ item.product.name }} x{{ item.quantity }}
+                                                    {% if item.designproduct.has_sizes or item.designproduct.badge or item.designproduct.banner or item.designproduct.busincard or item.designproduct.keyring or item.designproduct.pillow or item.designproduct.sign or item.designproduct.towel %}
+                                                        Size {{ item.designproductproduct.size|upper }}
+                                                    {% endif %}{{ item.designproductproduct.name }} x {{ item.quantity }}
                                                 </li>
                                             {% endfor %}
                                         </ul>

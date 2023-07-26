@@ -24,7 +24,7 @@
                     </span>
                 </button>
             </div>
-            {% if item.designproduct.has_sizes %}
+            {% if item.designproduct.has_sizes or item.designproduct.badge or item.designproduct.banner or item.designproduct.busincard or item.designproduct.keyring or item.designproduct.pillow or item.designproduct.sign or item.designproduct.towel %}
             <input type="hidden" name="product_size" value="{{ item.size }}">
             {% endif %}
         </div>

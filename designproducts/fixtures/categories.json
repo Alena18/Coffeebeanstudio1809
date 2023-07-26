@@ -36,39 +36,7 @@
     "model": "designproducts.category",
     "fields": {
       "name": "businesscards",
-      "friendly_name": "Businesscards"
-    }
-  },
-  {
-    "pk": 2,
-    "model": "designproducts.category",
-    "fields": {
-      "name": "posters",
-      "friendly_name": "Posters"
-    }
-  },
-  {
-    "pk": 3,
-    "model": "designproducts.category",
-    "fields": {
-      "name": "signs",
-      "friendly_name": "Signs"
-    }
-  },
-  {
-    "pk": 4,
-    "model": "designproducts.category",
-    "fields": {
-      "name": "businesscards",
       "friendly_name": "Business Cards"
-    }
-  },
-  {
-    "pk": 5,
-    "model": "designproducts.category",
-    "fields": {
-      "name": "badges",
-      "friendly_name": "Badges"
     }
   },
   {

@@ -1,4 +1,4 @@
 <p class="my-0"><strong>{{ item.designproduct.name }}</strong></p>
-<p class="my-0"><strong>Size: </strong>{% if item.designproduct.has_sizes %}{{
-    item.size|upper }}{% else %} N/A {% endif %}</p>
+<p class="my-0"><strong>Size: </strong>
+{% if item.designproduct.has_sizes or item.designproduct.badge or item.designproduct.banner or item.designproduct.busincard or item.designproduct.keyring or item.designproduct.pillow or item.designproduct.sign or item.designproduct.towel  %}{{ item.size|upper }}{% else %} N/A {% endif %}</p>
 <p class="my-0 small">SKU: {{ item.designproduct.sku|upper }}</p>
