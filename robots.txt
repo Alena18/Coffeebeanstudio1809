@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow:/bag/
+Sitemap: https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com/sitemap.xml
