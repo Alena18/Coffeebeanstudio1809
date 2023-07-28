@@ -29,6 +29,14 @@ body {
     color: #42250F;
 }
 
+.brownnohover {
+    color: #ab8240;
+}
+
+.darkbrownnohover {
+    color: #42250F;
+}
+
 .margin-promsolution {
     margin-top: 1%;
     text-align: center;
@@ -120,7 +128,75 @@ a.category-badge > span.badge:hover {
     color: #fefcfa !important;
 }
 
-/* bootstrap toasts */
+/* Mailchamp */
+
+#mc-embedded-subscribe-form input[type=checkbox] {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+}
+
+#mergeRow-gdpr {
+    margin-top: 20px;
+}
+
+#mergeRow-gdpr fieldset label {
+    font-weight: normal;
+}
+
+#mc-embedded-subscribe-form .mc_fieldset {
+    border: none;
+    min-height: 0px;
+    padding-bottom: 0px;
+}
+
+#mc_embed_signup {
+    background: #fff, false;     
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
+}
+
+#mc_embed_signup .button {
+    background-color:#42250F;
+}
+
+#mc_embed_signup .button:hover {
+    background-color: #ab8240;
+    color: #42250F;
+}
+
+/* Privacy Policy */
+
+.popupContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popupContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#closeBtn {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Bootstrap toasts */
 
 .margin-top {
      margin-top: 2%;
@@ -208,7 +284,7 @@ a:hover {
     color: #ab8240;
 }
 
-/* shop button */
+/* Shop button */
 @media (max-width: 1450px) {
     .shop-now-button {
         margin-top: -100%;
@@ -216,7 +292,8 @@ a:hover {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* Pad the top a bit when navbar is collapsed on mobile */
+
 @media (max-width: 992px) {
     .header-container {
         padding-top: 116px;
