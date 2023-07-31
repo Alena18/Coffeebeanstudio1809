@@ -282,17 +282,23 @@
 
 <!-- Privacy Policy -->
 <script>
-    document.getElementById("privacypolicybtn").addEventListener("click", function () {
-        const checkbox = document.getElementById("terms");
+    const policySection = document.getElementById("privacypolicy");
+    const closeButton = document.getElementById("privacypolicybtn");
+    const checkbox = document.getElementById("terms");
+
+    // Check if the policy has been acknowledged before
+    if (localStorage.getItem("privacyPolicyAcknowledged") === "true") {
+        policySection.style.display = "none"; // Hide the policy section if it was acknowledged before
+    }
+
+    closeButton.addEventListener("click", function () {
         if (checkbox.checked) {
-            const privacyPolicyDiv = document.getElementById("privacypolicy");
-            privacyPolicyDiv.style.display = "none";
-        } else {
-            alert("You need to check 'I agree to the term and condition box' before closing.");
+            policySection.style.display = "none"; // Hide the policy section after clicking the "Close" button
+
+            // Set a flag in localStorage to remember that the policy has been acknowledged
+            localStorage.setItem("privacyPolicyAcknowledged", "true");
         }
     });
-
 </script>
-
 
 </html>
