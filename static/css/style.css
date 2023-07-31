@@ -169,32 +169,33 @@ a.category-badge > span.badge:hover {
 
 /* Privacy Policy */
 
-.popupContainer {
-    display: none;
+#privacypolicy {
+    background-color: #fefcfa;
+    border: 1px solid #42250F;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 1%;
+    padding: 1%;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
 }
 
-.popupContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+#privacypolicybtn {
+    background-color: #42250F;
+    color: #ab8240;
+    border-radius: 8px;
+    border-color: #42250F;
+    border-style: solid;
 }
 
-#closeBtn {
-    display: block;
-    margin-top: 10px;
+#privacypolicybtn:hover {
+    background-color: #ab8240;
+    color: #42250F;
+    border-radius: 8px;
+    border-color: #ab8240;
+    border-style: solid;
 }
 
 /* Bootstrap toasts */
@@ -344,7 +345,7 @@ a:hover {
     padding: .375rem .75rem;
     font-size: 1.5rem;
     line-height: 1.5;
-    border-radius: 8;
+    border-radius: 8px;
 
 
     /* standard bootstrap btn transitions */

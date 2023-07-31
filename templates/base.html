@@ -264,28 +264,17 @@
                         </div>
 
                     </div>
-                    <div class="col-12">
-
-                        <!-- Pop-up Privacy Policy -->
-                        <div id="popupContainer" class="popupContainer alltext">
-                            <div class="popupContent">
-                                <h2>Privacy Policy</h2>
-                                <p>By using this site you agree to our <a id="privacyPolicyLink"
-                                        href="https://www.privacypolicygenerator.info/live.php?token=bL6wZXY5dSRASPJlJi9UFHjSjfepPzDK"
-                                        target="_blank">
-                                        Privacy Policy</a>. Please accept these before using the site.
-                                </p>
-                                <button id="btn">Close</button>
-                            </div>
-                        </div>
-
-
-                    </div>
+                   
+                </div>
+                
             </section>
         </div>
-
+        <!-- Privacy Policy -->
+            {% include 'includes/toasts/toast_privacypolicy.html' %}
     </footer>
     <!-- /.footer -->
+    
+    
 </body>
 
 <!-- Mailchamp script-->
@@ -293,28 +282,15 @@
 <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = EMAIL; ftypes[0] = merge; fnames[1] = MMERGE1; ftypes[1] = merge; false }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 
 <!-- Privacy Policy -->
-
 <script>
-    // Get the pop-up container and close button
-    const popupContainer = document.getElementById('popupContainer');
-    const closeBtn = document.getElementById('closeBtn');
-
-    // Show the pop-up when needed (e.g., when a user clicks a "Privacy Policy" link)
-    function showPrivacyPolicy() {
-        popupContainer.style.display = 'block';
-    }
-
-    // Hide the pop-up when the close button is clicked
-    function closePrivacyPolicy() {
-        popupContainer.style.display = 'none';
-    }
-
-    // Event listener to show the pop-up
-    // Replace 'privacyPolicyLink' with the element that triggers the pop-up display
-    document.getElementById('privacyPolicyLink').addEventListener('click', showPrivacyPolicy);
-
-    // Event listener to hide the pop-up when the close button is clicked
-    closeBtn.addEventListener('click', closePrivacyPolicy);
+    document.getElementById("privacypolicybtn").addEventListener("click", function () {
+        const checkbox = document.getElementById("terms");
+        if (checkbox.checked) {
+            const privacyPolicyDiv = document.getElementById("privacypolicy");
+            privacyPolicyDiv.style.display = "none";
+        }
+    });
 </script>
+
 
 </html>
