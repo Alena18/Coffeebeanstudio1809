@@ -39,14 +39,9 @@
 
     {% block corejs %}
     <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
@@ -194,12 +189,12 @@
                                 class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
                         <h3 class="alltext mt-4">Email us</h3>
                         <a href="mailto:coffeebeanstudio1809@gmail.com" class="contacts" target="_blank" rel="noopener"
-                    aria-label="email me (opens in a new tab)"><i class="fa-solid fa-envelope"></i><span
-                        class="socialmedia-gap">coffeebeanstudio</span><span
-                        class="font-number">1809</span>@gmail.com
-                    </a>
+                            aria-label="email me (opens in a new tab)"><i class="fa-solid fa-envelope"></i><span
+                                class="socialmedia-gap">coffeebeanstudio</span><span
+                                class="font-number">1809</span>@gmail.com
+                        </a>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 mb-4">
                         <h2 class="alltext">Subscribe to get exclusive offers</h2>
                         <div id="mc_embed_shell">
                             <div id="mc_embed_signup">
@@ -210,13 +205,15 @@
                                     <div id="mc_embed_signup_scroll">
                                         <h2>Subscribe</h2>
                                         <div class="indicates-required"><span class="asterisk">*</span> indicates
-                                            required</div>
-                                        <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
-                                                    class="asterisk">*</span></label><input type="email" name="EMAIL"
-                                                class="required email" id="mce-EMAIL" required="" value=""><span
-                                                id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-                                        <div id="mergeRow-gdpr"
-                                            class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+                                            required
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                            </label>
+                                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                        </div>
+                                        <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
                                             <div class="content__gdpr"><label>Marketing Permissions</label>
                                                 <p>Please select all the ways you would like to hear from
                                                     CoffeeBeanStudio1809:</p>
@@ -252,11 +249,11 @@
                                             <div class="clear foot">
                                                 <input type="submit" name="subscribe" id="mc-embedded-subscribe"
                                                     class="button" value="Subscribe">
-                                                <p class="brandingLogo darkbrownnohover" style="margin: 0px auto;"><a
-                                                        href="http://eepurl.com/iwEmoU"
-                                                        title="Mailchimp - email marketing made easy and fun"><img
-                                                            src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
-                                                            alt="referral badge"></a></p>
+                                                <p class="brandingLogo darkbrownnohover" style="margin: 0px auto;">
+                                                    <a href="http://eepurl.com/iwEmoU" title="Mailchimp - email marketing made easy and fun">
+                                                        <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" alt="referral badge">
+                                                    </a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -265,16 +262,16 @@
                         </div>
 
                     </div>
-                   
+
                 </div>
-                
+
             </section>
         </div>
-        
+
     </footer>
     <!-- /.footer -->
-    
-    
+
+
 </body>
 
 <!-- Mailchamp script-->
