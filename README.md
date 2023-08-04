@@ -1,53 +1,26 @@
 # COFFEEBEANSTUDIO1809
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+The live link can be found here [ CoffeeBeanStudio1809 website ](https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com/)
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+Welcome to Coffeebeanstudio1809, your ultimate destination for innovative promotional product design solutions. Our mission is to revolutionize the way businesses and individuals approach promotions and gifting. Unlike traditional methods, we bring a fresh and creative approach to the table, ensuring your promotional efforts are not only effective but also memorable.
+At Coffeebeanstudio1809, we understand the power of thoughtful and well-designed promotional products. Our team work tirelessly to curate a diverse range of product ideas that cater to various occasions, including birthdays, weddings, business events, parties, holy communions, and more. We believe that every occasion deserves a unique touch, and our designs reflect just that.
+Our website help you easily explore a diverse range of products and access detailed information, including pricing and ratings.
+Register and create an account with seamless login/logout options. Recover forgotten passwords and receive email confirmations for smooth account management. Sort products by rating, price, and category for a tailored shopping experience. Effortlessly search for products by name or description. Review your shopping bag, adjust quantities, and securely enter payment information. Trust in the safety and security of your personal and payment details. Verify orders through on-screen and email confirmations. Admins can add, edit, and remove products seamlessly.
+Join Coffeebeanstudio1809 for a simplified design journey, whether for business branding or special events. Transform your ideas into captivating designs with a few clicks.
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
+Rest assured, I've rigorously tested this website across various platforms to ensure its seamless functionality.
 Here's your deployed site as an example:
 https://ui.dev/amiresponsive?url=https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com
 
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](documentation/amiresponsive.png)
 
 ## UX
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Colour Scheme
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Explain your colours and the colour scheme.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
+- `#42250F` used for primary text.
+- `#ab8240` used for description highlights.
+- `#fefcfa` used for the background of the page.
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
