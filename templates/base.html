@@ -78,9 +78,9 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'designproducts'%}">
                     <div class="input-group w-100 alltext">
-                        <input class="form-control border rounded-8" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border rounded-8" type="text" name="q" placeholder="Search our site" aria-labelledby="search">
                         <div class="input-group-append">
-                            <button class="form-control btn border rounded-8" type="submit">
+                            <button class="form-control btn border rounded-8" type="submit" placeholder="Search our site" aria-labelledby="search">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -281,12 +281,12 @@
 <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = EMAIL; ftypes[0] = merge; fnames[1] = MMERGE1; ftypes[1] = merge; false }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 
 <!-- Privacy Policy -->
-<script>
+<!-- <script>
     const policySection = document.getElementById("privacypolicy");
     const closeButton = document.getElementById("privacypolicybtn");
-    const checkbox = document.getElementById("terms");
+    const checkbox = document.getElementById("terms"); -->
 
-    // Check if the policy has been acknowledged before
+    <!-- // Check if the policy has been acknowledged before
     if (localStorage.getItem("privacyPolicyAcknowledged") === "true") {
         policySection.style.display = "none"; // Hide the policy section if it was acknowledged before
     }
@@ -299,6 +299,6 @@
             localStorage.setItem("privacyPolicyAcknowledged", "true");
         }
     });
-</script>
+</script> -->
 
 </html>

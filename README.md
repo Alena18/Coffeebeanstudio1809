@@ -22,10 +22,8 @@ https://ui.dev/amiresponsive?url=https://coffeebeanstudio1809-7c1114e7ca53.herok
 - `#ab8240` used for description highlights.
 - `#fefcfa` used for the background of the page.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a link and screenshot for your colour scheme using "coolors".
-https://coolors.co/generate
+I checked colour scheme using "contrast checker".
+https://accessibleweb.com/color-contrast-checker/
 
 When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
 
