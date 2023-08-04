@@ -280,25 +280,5 @@
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = EMAIL; ftypes[0] = merge; fnames[1] = MMERGE1; ftypes[1] = merge; false }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 
-<!-- Privacy Policy -->
-<script>
-    const policySection = document.getElementById("privacypolicy");
-    const closeButton = document.getElementById("privacypolicybtn");
-    const checkbox = document.getElementById("terms");
-
-    // Check if the policy has been acknowledged before
-    if (localStorage.getItem("privacyPolicyAcknowledged") === "true") {
-        policySection.style.display = "none"; // Hide the policy section if it was acknowledged before
-    }
-
-    closeButton.addEventListener("click", function () {
-        if (checkbox.checked) {
-            policySection.style.display = "none"; // Hide the policy section after clicking the "Close" button
-
-            // Set a flag in localStorage to remember that the policy has been acknowledged
-            localStorage.setItem("privacyPolicyAcknowledged", "true");
-        }
-    });
-</script>
 
 </html>

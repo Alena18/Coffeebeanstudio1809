@@ -168,60 +168,6 @@ a.category-badge > span.badge:hover {
     color: #42250F;
 }
 
-/* Privacy Policy */
-
-#privacypolicy {
-    background-color: #fefcfa;
-    border: 1px solid #42250F;
-    position: fixed;
-    top: 1%;
-    padding: 1%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.6s;
-    z-index: 9999; /* A high value to ensure it stays on top of other elements */
-}
-
-#privacypolicybtn {
-    background-color: #42250F;
-    color: #ab8240;
-    border-radius: 8px;
-    border-color: #42250F;
-    border-style: solid;
-}
-
-#privacypolicybtn:hover {
-    background-color: #ab8240;
-    color: #42250F;
-    border-radius: 8px;
-    border-color: #ab8240;
-    border-style: solid;
-}
-
-#tooltip {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: small;
-    font-weight: normal;
-    border: solid;
-    border-color: #000;
-    border-width: thin;
-    position: absolute;
-    display: none;
-    background-color: #fff;
-    color: black;
-    padding: 5px;
-    border-radius: 5px;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#privacypolicybtn:hover + #tooltip {
-    display: block;
-}
-
 /* Bootstrap toasts */
 
 .margin-top {
