@@ -9,6 +9,7 @@ from .forms import ProductForm
 
 # Create your views here.
 
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -24,7 +25,7 @@ def all_products(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                designproducts = designproducts.annotate(lower_name=Lower('name'))
+                designproducts = designproducts.annotate(lower_name=Lower('name'))  # noqa
             if sortkey == 'category':
                 sortkey = 'category__name'
             if 'direction' in request.GET:
@@ -32,19 +33,19 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             designproducts = designproducts.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            designproducts = designproducts.filter(category__name__in=categories)
+            designproducts = designproducts.filter(category__name__in=categories)  # noqa
             categories = Category.objects.filter(name__in=categories)
 
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any search criteria!")  # noqa
                 return redirect(reverse('designproducts'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(name__icontains=query) | Q(description__icontains=query)  # noqa
             designproducts = designproducts.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -76,7 +77,7 @@ def add_designproduct(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))    
+        return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -85,10 +86,10 @@ def add_designproduct(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('add_designproduct'))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')  # noqa
     else:
         form = ProductForm()
-        
+
     template = 'designproducts/add_designproduct.html'
     context = {
         'form': form,
@@ -112,7 +113,7 @@ def edit_designproduct(request, designproduct_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[designproduct.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')  # noqa
     else:
         form = ProductForm(instance=designproduct)
         messages.info(request, f'You are editing {designproduct.name}')

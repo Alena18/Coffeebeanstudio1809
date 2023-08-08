@@ -6,5 +6,5 @@ def index(request):
 
     return render(request, 'home/index.html')
 
-def profile (request):
-    return render(request,'profile.html')
+def profile(request):
+    return render(request, 'profile.html')

@@ -2,253 +2,88 @@
 
 Return back to the [README.md](README.md) file.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you need to convince the assessors that you have conducted enough testing to legitimately believe that the site works well.
-Essentially, in this part, you should go over all of your project's features, and ensure that they all work as intended,
-with the project providing an easy and straightforward way for the users to achieve their goals.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ## Code Validation
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
-
-**IMPORTANT**: You must provide a screenshot for each file you validate.
-
-**PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### HTML
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-- If you are copying/pasting your HTML code, use this link: https://validator.w3.org/#validate_by_input
-- (*recommended*) If you are using the live deployed site pages, use this link: https://validator.w3.org/#validate_by_uri
-
-It's recommended to validate the live pages (each of them) using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to a page to validate it again in the future.
-The URL will look something like this:
-
-- https://validator.w3.org/nu/?doc=https%3A%2F%2FAlena18.github.io%2FCoffeebeanstudio1809%2Findex.html
-
-Sample HTML code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoffeebeanstudio1809-7c1114e7ca53.herokuapp.com%2F
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FAlena18.github.io%2FCoffeebeanstudio1809%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Section lacks header h2-h6 warning |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FAlena18.github.io%2FCoffeebeanstudio1809%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | obsolete iframe warnings |
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FAlena18.github.io%2FCoffeebeanstudio1809%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
-| Add Blog | n/a | ![screenshot](documentation/html-validation-add-blog.png) | Duplicate IDs found, and fixed |
-| Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining HTML files |
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT**: Python/Jinja syntax in HTML
-
-Python projects that use Jinja syntax, such as `{% for loops %}`, `{% url 'home' %}`, and `{{ variable|filter }}`
-will not validate properly if you're copying/pasting into the HTML validator.
-
-In order to properly validate these types of files, it's recommended to
-[validate by uri](https://validator.w3.org/#validate_by_uri) from the deployed Heroku pages.
-
-Unfortunately, pages that require a user to be logged-in and authenticated (CRUD functionality),
-will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have
-access to login to your pages.
-In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
-
-- Navigate to the deployed pages which require authentication
-- Right-click anywhere on the page, and select **View Page Source** (usually `CTRL+U` or `⌘+U` on Mac).
-- This will display the entire "compiled" code, without any Jinja syntax.
-- Copy everything, and use the [validate by input](https://validator.w3.org/#validate_by_input) method.
-- Repeat this process for every page that requires a user to be logged-in/authenticated.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoffeebeanstudio1809-7c1114e7ca53.herokuapp.com%2F) | ![screenshot](documentation/html.png) | Pass: No Errors  |
+| Bag | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoffeebeanstudio1809-7c1114e7ca53.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/htmlbag.png) | Pass: No Errors |
+| Profile | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoffeebeanstudio1809-7c1114e7ca53.herokuapp.com%2Fprofile%2F) | ![screenshot](documentation/htmlprofile.png) | Pass: No Errors |
+| Product View |[W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoffeebeanstudio1809-7c1114e7ca53.herokuapp.com%2Fdesignproducts%2F%3Fcategory%3Dbanners) | ![screenshot](documentation/productsviewhtml.png) | Pass: No Errors |
+| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoffeebeanstudio1809-7c1114e7ca53.herokuapp.com%2Fcheckout%2F) | ![screenshot](documentation/htmlcheckout.png) | Pass: No Errors |
 
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-- If you are copying/pasting your HTML code, use this link: https://jigsaw.w3.org/css-validator/#validate_by_input
-- (*recommended*) If you are using the live deployed site, use this link: https://jigsaw.w3.org/css-validator/#validate_by_uri
-
-It's recommended to validate the live site if you only have a single CSS file using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to the page to validate it again in the future.
-The URL will look something like this:
-
-- https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FAlena18.github.io%2FCoffeebeanstudio1809
-
-If you have multiple CSS files, then individual [validation by input](https://jigsaw.w3.org/css-validator/#validate_by_input)
-is recommended for the additional CSS files.
-
-**IMPORTANT**: Third-Party tools
-
-If you're using extras like Bootstrap, Materialize, Font Awesome, then sometimes the validator
-will attempt to also validate this code, even if it's not part of your own actual code.
-You are not required to validate the external libraries or frameworks!
-
-Sample CSS code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FAlena18.github.io%2FCoffeebeanstudio1809) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/css-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining CSS files |
+| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FAlena18.github.io%2FCoffeebeanstudio1809) | ![screenshot](documentation/cssaws.png) | Pass: No Errors |
+| checkout.css | [Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input)| ![screenshot](documentation/csscheckout.png) | Pass: No Errors |
+| profile.css | [Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![screenshot](documentation/cssprofile.png) | Pass: No Errors |
 
 ### JavaScript
 
-I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-If using modern JavaScript (ES6) methods, then make sure to include the following
-line at the very top of every single JavaScript file (this should remain in your files for submission):
-
-    /* jshint esversion: 11 */
-
-If you are also including jQuery (`$`), then the updated format will be:
-
-    /* jshint esversion: 11, jquery: true */
-
-This allows the JShint validator to recognize modern ES6 methods, such as:
-`let`, `const`, `template literals`, `arrow functions (=>)`, etc.
-
-**IMPORTANT**: External resources
-
-Sometimes we'll write JavaScript that imports variables from other files, such as an array of questions
-from `questions.js`, which are used within the main `script.js` file elsewhere.
-If that's the case, the JShint validation tool doesn't know how to recognize unused variables
-that would normally be imported locally in your code.
-These warnings are acceptable to showcase on your screenshots.
-
-The same thing applies when using external libraries such as Stripe, Leaflet, Bootstrap, Materialize, etc..
-To instantiate these components, we need to use their respective declarator.
-Again, the JShint validation tool would flag these as undefined/unused variables.
-These warnings are acceptable to showcase on your screenshots.
-
-Sample JS code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+I have used the recommended [Jshint](https://jshint.com/) to validate all of my Javascript files.
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| script.js | ![screenshot](documentation/js-validation-script.png) | Unused variables from external files |
-| questions.js | ![screenshot](documentation/js-validation-questions.png) | Pass: No Errors |
-| quiz.js | ![screenshot](documentation/js-validation-quiz.png) | Unused variables from external files |
-| stripe_elements.js | ![screenshot](documentation/js-validation-stripe.png) | Undefined Stripe variable |
-| x | x | x | repeat for all remaining JavaScript files |
+| stripe_elements.js | ![screenshot](documentation/stripe.png) | Undefined variable that defines according to stripe website |
+| questions.js | ![screenshot](documentation/countryfield.png) | Pass: No Errors |
 
 ### Python
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Check the example table below for a live demo.
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix any Python lines that are too long ( >80 characters ).
-In rare cases where you cannot break the lines [without breaking the functionality],
-then by adding `# noqa` to the end of those lines will ignore linting validation.
-
-`# noqa` = **NO Quality Assurance**
-
-**NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
-
-Do not use `# noqa` all over your project just to clear down validation errors!
-This can still cause a project to fail, for failing to fix actual PEP8 validation errors.
-
-Sometimes strings or variables get too long, or long `if` conditional statements.
-These are acceptable instances to use the `# noqa`.
-
-When trying to fix "line too long" errors, try to avoid using `/` to split lines.
-A better approach would be to use any type of opening bracket, and hit Enter just after that.
-
-Any opening bracket type will work: `(`, `[`, `{`.
-
-By using an opening bracket, Python knows where to appropriately indent the next line of code,
-without having to "guess" yourself and attempt to tab to the correct indentation level.
-
-Sample Python code validation documentation below (tables are extremely helpful!).
-
-**Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Alena18/coffeebeanstudio1809/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Alena18/coffeebeanstudio1809/main/boutique-ado/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
-| Blog views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Alena18/coffeebeanstudio1809/main/blog/views.py) | ![screenshot](documentation/py-validation-blog-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Alena18/coffeebeanstudio1809/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Alena18/coffeebeanstudio1809/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining Python files |
+| manage.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/manage.py) | ![screenshot](documentation/managecof.png) | Pass: No Errors |
+| settings.py before validation | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/coffeebeanstudio1809/settings.py) | ![screenshot](documentation/settingbefore.png) | Few errors, all fixed |
+| settings.py after validation | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/coffeebeanstudio1809/settings.py) | ![screenshot](documentation/settingafter.png) | Pass: No Errors |
+| custom_storages.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/custom_storages.py) | ![screenshot](documentation/customerstorage.png) | Pass: No Errors |
+| Coffeebeanstudio1809 url.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/coffeebeanstudio1809/asgi.py) | ![screenshot](documentation/urlcoffee.png) | Pass: No Errors |
+| Coffeebeanstudio1809 view.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/coffeebeanstudio1809/views.py) | ![screenshot](documentation/viewcoffee.png) | Pass: No Errors |
+| Coffeebeanstudio1809 wsgi.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/coffeebeanstudio1809/wsgi.py) | ![screenshot](documentation/wsgicoffee.png) | Pass: No Errors |
+| Bag app.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/bag/apps.py) | ![screenshot](documentation/bagapp.png) | Pass: No Errors |
+| Bag context.py before validation| [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/bag/contexts.py) | ![screenshot](documentation/bagcontextbefore.png) | Few errors, all fixed |
+| Bag context.py after validation| [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/bag/contexts.py) | ![screenshot](documentation/bagcontextafter.png) | Pass: No Errors |
+| Bag url.py after validation| [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/bag/urls.py) | ![screenshot](documentation/bagurl.png) | Pass: No Errors |
+| bag view.py after validation| [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/bag/views.py) | ![screenshot](documentation/bagviewpy.png) | Pass: No Errors |
+| Checkout admin.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/checkout/admin.py) | ![screenshot](documentation/admincheckout.png) | Pass: No Errors |
+| Checkout app.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/checkout/apps.py) | ![screenshot](documentation/appcheckout.png) | Pass: No Errors |
+| Checkout forms.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/checkout/forms.py) | ![screenshot](documentation/formscheckout.png) | Pass: No Errors |
+| Checkout model.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/checkout/models.py) | ![screenshot](documentation/modelcheckout.png) | Pass: No Errors |
+| Checkout signals.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/checkout/signals.py) | ![screenshot](documentation/signalcheckout.png) | Pass: No Errors |
+| Checkout urls.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/checkout/urls.py) | ![screenshot](documentation/urlcheckout.png) | Pass: No Errors |
+| Checkout view.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/checkout/views.py) | ![screenshot](documentation/modelcheckout.png) | Pass: No Errors |
+| Checkout webhook_handler.py.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/checkout/webhook_handler.py) | ![screenshot](documentation/handlercheckout.png) | Pass: No Errors |
+| Checkout webhooks.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/checkout/webhooks.py) | ![screenshot](documentation/webhook.png) | Pass: No Errors |
+| Design apps.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/design/apps.py) | ![screenshot](documentation/appdesign.png) | Pass: No Errors |
+| Design url.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/design/urls.py) | ![screenshot](documentation/urldesign.png) | Pass: No Errors |
+| Design view.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/design/views.py) | ![screenshot](documentation/viewdesign.png) | Pass: No Errors |
+| Designproduct admin.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/designproducts/admin.py) | ![screenshot](documentation/adminproduct.png) | Pass: No Errors |
+| Designproduct apps.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/designproducts/apps.py) | ![screenshot](documentation/appprodesproducts.png) | Pass: No Errors |
+| Designproduct forms.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/designproducts/forms.py) | ![screenshot](documentation/formsproduct.png) | Pass: No Errors |
+| Designproduct models.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/designproducts/models.py) | ![screenshot](documentation/modelsproduct.png) | Pass: No Errors |
+| Designproduct urls.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/designproducts/urls.py) | ![screenshot](documentation/urlproduct.png) | Pass: No Errors |
+| designproduct widget.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/designproducts/widgets.py) | ![screenshot](documentation/widgetproduct.png) | Pass: No Errors |
+| designproduct view.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/design/views.py) | ![screenshot](documentation/viewdesign.png) | Pass: No Errors |
+| Profiles apps.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/profiles/apps.py) | ![screenshot](documentation/appprofile.png) | Pass: No Errors |
+| Profiles forms.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/profiles/forms.py) | ![screenshot](documentation/formsprofile.png) | Pass: No Errors |
+| Profiles models.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/profiles/models.py) | ![screenshot](documentation/modelprofile.png) | Pass: No Errors |
+| Profiles urls.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/profiles/urls.py) | ![screenshot](documentation/urlsprofile.png) | Pass: No Errors |
+| Profiles view.py | [PEP8 CI](https://github.com/Alena18/Coffeebeanstudio1809/blob/main/profiles/views.py) | ![screenshot](documentation/viewprofile.png) | Pass: No Errors |
 
-**IMPORTANT**: Django settings.py
 
-The Django settings.py file comes with 4 lines that are quite long, and will throw the `E501 line too long` error.
-This is default behavior, but can be fixed by adding `# noqa` to the end of those lines.
+## Browser Compatibilitys
 
-Example:
-
-```python
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
-    },
-]
-```
-
-**IMPORTANT**: migration and pycache files
-
-You do not have to ever validate files from the `migrations/` or `pycache/` folders!
-Ignore these `.py` files, and validate just the files that you've created or modified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-## Browser Compatibility
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss testing the live/deployed site on various browsers.
-
-Consider testing at least 3 different browsers, if available on your system.
+I tested website using next browsers:
 
 Recommended browsers to consider:
 - [Chrome](https://www.google.com/chrome)
@@ -258,64 +93,25 @@ Recommended browsers to consider:
 - [Brave](https://brave.com/download)
 - [Opera](https://www.opera.com/download)
 
-**IMPORTANT**: You must provide screenshots of the tested browsers, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time.
-Some of these are paid services, but some are free.
-If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-Sample browser testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I've tested my deployed project on multiple browsers to check for compatibility issues.
-
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox.png) | Works as expected |
-| Edge | ![screenshot](documentation/browser-edge.png) | Works as expected |
-| Safari | ![screenshot](documentation/browser-safari.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browser-brave.png) | Works as expected |
-| Opera | ![screenshot](documentation/browser-opera.png) | Minor differences |
-| Internet Explorer | ![screenshot](documentation/browser-iex.png) | Does not work as expected |
-| x | x | repeat for any other tested browsers |
+| Chrome | ![screenshot](documentation/googlecoffee.png) | Works as expected |
+| Firefox | ![screenshot](documentation/foxcoffee.png) | Works as expected |
+| Edge | ![screenshot](documentation/edgecoffee.png) | Works as expected |
+| Brave | ![screenshot](documentation/bravecoffee.png) | Works as expected |
+| Opera | ![screenshot](documentation/operacoffee.png) | Minor differences |
 
 ## Responsiveness
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I've tested my deployed project on multiple devices to check for responsiveness issues.
+I've tested my deployed project on multiple devices (mobile, tablet,  desktop) to check for responsiveness issues.
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsive-xl.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsive-4k.png) | Noticeable scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsive-pixel.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsive-iphone.png) | Works as expected |
-| x | x | repeat for any other tested sizes |
+| Mobile (DevTools) | ![screenshot](documentation/galaxyeight.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/ipadmini.png) | Works as expected |
+| Desktop | ![screenshot](documentation/desktop.png) | Works as expected |
+| Ipad mini | ![screenshot](documentation/ipadminiland.png) | Works as expected |
+| Surface Pro 7 | ![screenshot](documentation/surfaceproseven.png) | Works as expected |
 
 ## Lighthouse Audit
 
