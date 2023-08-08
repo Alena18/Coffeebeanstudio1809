@@ -60,6 +60,11 @@ body {
     cursor:pointer;
 }
 
+.updatebtnhover:hover {
+    color:#ab8240;
+    text-decoration: underline;
+}
+
 .dropdown-item {
     font-family: "Bebas Neue", serif;
     color: #42250F;
