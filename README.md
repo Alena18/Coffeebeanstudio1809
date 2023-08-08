@@ -23,180 +23,251 @@ https://ui.dev/amiresponsive?url=https://coffeebeanstudio1809-7c1114e7ca53.herok
 - `#fefcfa` used for the background of the page.
 
 I checked colour scheme using "contrast checker".
+
 https://accessibleweb.com/color-contrast-checker/
 
 ### Typography
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+- [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue) was used for the primary headers and titles.
 
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [Tangerine](https://fonts.google.com/specimen/Tangerine) was used for all other highlight text.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## User Stories
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, list all of your user stories for the project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### New Site Users
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new site user, I would like to be able to view a list of products, so that I can select some to purchase.
+- As a new site user, I would like to view individual product details, so that I can identify the price, description, product rating.
+- As a new site user, I would like to quickly identify deals, clearance items and special offers, so that I can take advantage of special savings on products user like to purchase.
+- As a new site user, I would like to easily view the total of my purchases at any time , so that I can avoid spending too much.
+- As a new site user, I would like to sort the list of available products, so that I can easily identify the best rated, best priced and categorically sorted products.
 
 ### Returning Site Users
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a returning site user, I would like to easily register for an account, so that I can have a personal account and be able to view my profile.
+- As a returning site user, I would like to easily login or logout, so that I can access my personal account information.
+- As a returning site user, I would like to easily recover my password in case user forget it, so that I can recover access to my account.
+- As a returning site user, I would like to receive an email confirmation after registering , so that I can verify that my account registration was successful.
+- As a returning site user, I would like to have a personalized user profile, so that I can view my personal order history and order confirmation and save my payment information.
 
 ### Site Admin
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to add a product, so that I can add new items to user store.
+- As a site administrator, I should be able to edit a product, so that I can change product prices, descriptions, images, and other product criteria.
+- As a site administrator, I should be able to update a product, so that I can change product prices, descriptions, images, and other product criteria.
+- As a site administrator, I should be able to delete a product, so that I can remove items that are no longer for sale.
+
+## Personas
+
+![First persona](documentation/personaone.png)
+
+![Second persona](documentation/personatwo.png)
 
 ## Wireframes
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+I've used [Figma](https://www.figma.com/) to design my site wireframes.
+
+### Home Page Paper Wireframes
+
+| Size | Screenshot |
+| --- | --- |
+| Mobile | ![screenshot](documentation/paperwireframe.png) |
+| Mobile | ![screenshot](documentation/paperwiremob.png) |
+| Mobile | ![screenshot](documentation/homewireframe.png) |
 
 ### Home Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
+| Mobile | ![screenshot](documentation/homemob.png) |
+| Tablet | ![screenshot](documentation/notehome.png) |
+| Desktop | ![screenshot](documentation/homedesk.png) |
 
-### About Page Wireframes
-
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-about.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
-
-### Contact Page Wireframes
+### Product View Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](documentation/productviewmob.png) |
+| Tablet | ![screenshot](documentation/noteprodview.png) |
+| Desktop | ![screenshot](documentation/prodviewdesk.png) |
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+### Product Detail Page Wireframes
 
-Repeat for any addition wireframe pages you have.
+| Size | Screenshot |
+| --- | --- |
+| Mobile | ![screenshot](documentation/bagmob.png) |
+| Tablet | ![screenshot](documentation/noteproddetail.png) |
+| Desktop | ![screenshot](documentation/productdetaildesk.png) |
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+**For more details of whole UX Design process see** [UX research](documentation/CoffeeBeanStudio1809%20-%20PP5.pdf)
+
 
 ## Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Existing Features
 
-- **Title for feature #1**
+**Viewing and Navigation:**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- Viewing a List of Products
 
-![screenshot](documentation/feature01.png)
+  - Users can easily explore and select products they are interested in purchasing.
 
-- **Title for feature #2**
+- View Individual Product Details
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - Users can make informed decisions by accessing essential product information like price, description, and ratings.
 
-![screenshot](documentation/feature02.png)
+- Quickly Identify Deals and Special Offers
 
-- **Title for feature #3**
+  - Users can take advantage of cost savings by identifying and purchasing items on sale or with special offers.
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- Easily View Total Purchases
 
-![screenshot](documentation/feature03.png)
+  - Users can keep track of their spending and avoid overspending.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+![screenshot](documentation/viewnavig.png)
 
-Repeat as necessary for as many features as your site contains.
+**Registration and User Accounts:**
 
-Hint: the more, the merrier!
+- Easily Register for an Account
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+  - Users can create a personalized account, enhancing their shopping experience and enabling order tracking.
+
+- Easily Login or Logout
+
+  - Users can access their account information conveniently and securely.
+
+- Password Recovery
+
+  - Users can regain access to their accounts if they forget their passwords.
+
+- Email Confirmation
+
+  - Users receive confirmation of successful registration, ensuring their account setup is complete.
+
+- Personalized User Profile
+
+  - Users can view order history, order confirmations, and save payment information for faster checkouts.
+
+![screenshot](documentation/register.png)
+
+**Sorting and Searching:**
+
+- Sort Available Products
+
+  - Users can easily find products based on criteria like ratings, prices, and categories.
+  
+- Sort Specific Category
+
+  - Users can quickly identify the best-priced or best-rated products within a specific category.
+
+- Sort Multiple Categories
+
+  - Users can efficiently compare and select products across different broad categories.
+
+- Search by Name or Description
+
+  - Users can find specific products they're interested in.
+
+- Search Visibility
+
+  - Users can quickly access search results and decide if the desired product is available.
+
+![screenshot](documentation/searchsort.png)
+
+**Purchasing and Checkout:**
+
+- Select Size and Quantity
+
+  - Users can accurately choose the right product variant, size, and quantity.
+
+- View Items in Cart
+
+  - Users can review their cart to ensure they have selected the correct items and calculate the total cost.
+
+- Adjust Item Quantity
+
+  - Users can easily modify the quantity of items in their cart.
+
+- Enter Payment Information
+
+  - Users can securely provide payment details for a hassle-free checkout process.
+
+- Data Security
+
+  - Users can confidently make purchases knowing their personal and payment information is secure.
+
+- Order Confirmation
+
+  - Users receive an immediate confirmation to verify their order details before finalizing the purchase.
+
+- Email Confirmation
+
+  - Users get an email confirmation of their order for record-keeping.
+
+![screenshot](documentation/checkout.png)
+
+**Admin and Store Management:**
+
+- Add, Edit, Delete Products
+
+  - Store administrators can efficiently manage the product catalog by adding, updating, or removing items.
+
+![screenshot](documentation/adminsite.png)
+
 
 ### Future Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+**Shipping and Tracking:**
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+- Choose Shipping Options
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+  - Users can select preferred shipping methods and delivery options for their orders.
 
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Track Order Status
+
+  - Users can easily track the progress and current status of their orders in real-time.
+
+- Receive Shipping Updates
+
+  - Users receive notifications and updates on shipping and delivery, including estimated delivery times.
+
+- Manage Returns and Refunds
+
+  - Users can initiate returns and refunds for products that don't meet their expectations or have issues.
+
+**Product Reviews and Ratings:**
+
+- Leave Product Reviews
+
+  - Users can provide feedback and reviews on products they've purchased to help others make informed decisions.
+
+- Read User Reviews
+
+  - Users can read reviews and testimonials from other customers to gather insights about products.
+
+**Customer Support and Help Center:**
+
+- Access Help Center
+
+  - Users can access a comprehensive help center with FAQs, guides, and troubleshooting resources.
+
+- Live Chat Support
+
+  - Users can engage in real-time chat with customer support agents for immediate assistance.
+
+- Request Order Help
+
+  - Users can submit requests for order-related issues, such as missing items or order changes.
 
 ## Tools & Technologies Used
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
-- [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -207,59 +278,39 @@ Feel free to delete any unused items below as necessary.
 - [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
-- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
 
 ## Database Design
 
-Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
-Understanding the relationships between different tables can save time later in the project.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ```python
 class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    banner = models.BooleanField(default=False, null=True, blank=True)
+    sign = models.BooleanField(default=False, null=True, blank=True)
+    badge = models.BooleanField(default=False, null=True, blank=True)
+    busincard = models.BooleanField(default=False, null=True, blank=True)
+    pillow = models.BooleanField(default=False, null=True, blank=True)
+    towel = models.BooleanField(default=False, null=True, blank=True)
+    keyring = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name
+
 ```
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ![screenshot](documentation/erd.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Using Markdown formatting to represent an example ERD table using the Product model above:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - Table: **Product**
 
@@ -282,36 +333,14 @@ Using Markdown formatting to represent an example ERD table using the Product mo
 [GitHub Projects](https://github.com/Alena18/Coffeebeanstudio1809/projects) served as an Agile tool for this project.
 It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/gh-projects.png)
+![screenshot](documentation/kanbanboard.png)
 
 ### GitHub Issues
 
 [GitHub Issues](https://github.com/Alena18/Coffeebeanstudio1809/issues) served as an another Agile tool.
 There, I used my own **User Story Template** to manage user stories.
 
-It also helped with milestone iterations on a weekly basis.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [Open Issues](https://github.com/Alena18/Coffeebeanstudio1809/issues)
-
-    ![screenshot](documentation/gh-issues-open.png)
-
-- [Closed Issues](https://github.com/Alena18/Coffeebeanstudio1809/issues?q=is%3Aissue+is%3Aclosed)
-
-    ![screenshot](documentation/gh-issues-closed.png)
+    ![screenshot](documentation/issuesamp.png)
 
 ### MoSCoW Prioritization
 
@@ -386,38 +415,19 @@ I've created a mockup Facebook business account using the
 [Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
 provided by Code Institute.
 
-![screenshot](documentation/mockup-facebook.png)
+![screenshot](documentation/facebook.png)
+
+The live link can be found here [ CoffeeBeanStudio1809 facebook page ](https://www.facebook.com/people/Coffeebeanstudio1809/100095074400849/)
 
 ### Newsletter Marketing
 
 I have incorporate a newsletter sign-up form on my application, to allow users to supply their
 email address if they are interested in learning more. 
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
 Option 1 (MailChimp):
 - Sign up for a Mailchimp account
 - This allows up to 2,500 subscription email sends per month
 - Incorporate the code and scripts into your project like in the CI lessons.
-
-Option 2 (Django):
-- Create a custom newsletter app in your project, with a custom model.
-- This method satisfies two assessment criteria:
-    - include a newsletter
-    - one of your custom models
-- It doesn't need anything except the "email" on the model.
-- Example:
-    ```python
-    class Newsletter(models.Model):
-    email = models.EmailField(null=False, blank=False)
-
-    def __str__(self):
-        return self.email
-    ```
-- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
-    - You can trigger an email sent out to subscribed users when new products are added to the site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Testing
 
@@ -425,14 +435,6 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT:**
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 The live deployed application can be found deployed on [Heroku](https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com).
 
@@ -741,32 +743,25 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+**Static File Handling - collectstatic:**
 
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
+In Django (assuming you're using it as your web framework), `collectstatic` is used to gather static files (like CSS, JavaScript, images) from your different apps into a single location that can be easily served by your web server. On your local machine, during development, you might have these files served directly from their respective app directories. However, on Heroku, which uses an ephemeral file system, it's necessary to use `collectstatic` to collect these files into one place that can be served efficiently.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+**Deployment Process:**
+
+**GitHub Platform:**
+You can deploy your web application to Heroku directly from a GitHub repository. This process usually involves connecting your Heroku app to your GitHub repository and specifying a branch to deploy from. This makes it easier to automate and manage deployments.
+
+**Heroku Dashboard:**
+Alternatively, you can deploy your app using the Heroku Dashboard. This involves manually uploading your code or connecting Heroku to a different Git repository.
+
+**Debug Mode:**
+
+In Django's settings, the `DEBUG` flag determines whether your application is in debug mode or not. When set to `True`, it provides more detailed error messages.
 
 ## Credits
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Content
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source | Location | Notes |
 | --- | --- | --- |
@@ -780,45 +775,24 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 | [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
 | [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
 | [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
+| [YouTube](https://www.youtube.com/watch?v=x5XU2aycDNs) | Term and condition page  | tutorial for Terms and Conditions & Privacy Policy Page |
+| [YouTube](https://www.youtube.com/watch?v=x5XU2aycDNs) | Cookie  | tutorial for how to code your own cookie consent popup with JavaScript |
+| [YouTube](https://www.youtube.com/watch?v=x5XU2aycDNs) | Rating  | tutorial for how to make rating |
+| [csestack](https://www.csestack.org/django-sign-up-registration-form/) | Registration  | tutorial for how to create a django signup registration form with database |
 | [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 
 ### Media
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+I used for background free media
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [Unsplash](https://unsplash.com/photos/Y_LgXwQEx2c) | home page | background | Photo by Mika Baumeister |
+
 
 ### Acknowledgements
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
