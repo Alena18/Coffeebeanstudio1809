@@ -65,7 +65,6 @@
                 <h1 class="display-4 darkbrownnohover">
                     Promotional Products Design Solution
                 </h1>
-                </a>
             </div>
         </div>
         <div class="row mob-collapse">
@@ -76,9 +75,9 @@
                     <div class="input-group w-100 alltext">
                         <input class="form-control border rounded-8" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
-                            <button class="form-control btn border rounded-8" type="submit" aria-labelledby="search">
+                            <button class="form-control btn border rounded-8" type="submit" aria-labelledby="search" id="search">
                                 <span class="icon">
-                                    <i class="fas fa-search" aria-labelledby="search"></i>
+                                    <i class="fas fa-search" aria-labelledby="search" id="search"></i>
                                 </span>
                             </button>
                         </div>
@@ -88,14 +87,13 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 alltext">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="nav-link" href="#" id="user-option" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                        <a class="nav-link" href="#" id="user-option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center alltext">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-option">
+                        <div class="dropdown-menu border-0" aria-labelledby="user-option" id="user-option">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_designproduct' %}" class="dropdown-item">Order Management</a>
@@ -185,13 +183,13 @@
                 <div class="row">
                     <div class="col-12 col-md-6 mb-4">
                         <h3 class="alltext">Social</h3>
-                        <a href="https://www.facebook.com/profile.php?id=100095074400849" target="_blank"><i
-                                class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
+                        <a href="https://www.facebook.com/profile.php?id=100095074400849" target="_blank">
+                            <i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
                         <h3 class="alltext mt-4">Email us</h3>
                         <a href="mailto:coffeebeanstudio1809@gmail.com" class="contacts" target="_blank" rel="noopener"
-                            aria-label="email me (opens in a new tab)"><i class="fa-solid fa-envelope"></i><span
-                                class="socialmedia-gap">coffeebeanstudio</span><span
-                                class="font-number">1809</span>@gmail.com
+                            aria-label="email me (opens in a new tab)"><i class="fa-solid fa-envelope"></i>
+                            <span class="socialmedia-gap">coffeebeanstudio</span>
+                            <span class="font-number">1809</span>@gmail.com
                         </a>
                     </div>
                     <div class="col-12 col-md-6 mb-4">
@@ -214,14 +212,16 @@
                                             <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
                                         </div>
                                         <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
-                                            <div class="content__gdpr"><label>Marketing Permissions</label>
+                                            <div class="content__gdpr">
+                                                <label>Marketing Permissions</label>
                                                 <p>Please select all the ways you would like to hear from
                                                     CoffeeBeanStudio1809:</p>
                                                 <fieldset class="mc_fieldset gdprRequired mc-field-group"
-                                                    name="interestgroup_field"><label class="checkbox subfield"
-                                                        for="gdpr59111"><input type="checkbox" id="gdpr_59111"
-                                                            name="gdpr[59111]" class="gdpr"
-                                                            value="Y"><span>Email</span></label></fieldset>
+                                                    name="interestgroup_field">
+                                                    <label class="checkbox subfield" for="gdpr59111">
+                                                        <input type="checkbox" id="gdpr59111" name="gdpr[59111]" class="gdpr" value="Y"><span>Email</span>
+                                                    </label>
+                                                </fieldset>
                                                 <p>You can unsubscribe at any time by clicking the link in the footer of
                                                     our emails. For information about our privacy practices, please
                                                     visit our website.</p>
@@ -236,8 +236,7 @@
                                         </div>
                                         <div id="mce-responses" class="clear foot">
                                             <div class="response" id="mce-error-response" style="display: none;"></div>
-                                            <div class="response" id="mce-success-response" style="display: none;">
-                                            </div>
+                                            <div class="response" id="mce-success-response" style="display: none;"></div>
                                         </div>
                                         <div aria-hidden="true" style="position: absolute; left: -5000px;">
                                             /* real people should not fill this in and expect good things - do not
@@ -262,9 +261,7 @@
                         </div>
 
                     </div>
-
                 </div>
-
             </section>
         </div>
 
