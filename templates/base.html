@@ -24,7 +24,6 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'media/coffeebeanstudio01.webp' %}">
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-    <!-- Mailchamp -->
     {% endblock %}
 
     {% block corecss %}
@@ -44,6 +43,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
+    <!-- Mailchimp -->
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = EMAIL; ftypes[0] = merge; fnames[1] = MMERGE1; ftypes[1] = merge; false }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+
     {% endblock %}
 
     {% block extra_js %}
@@ -95,7 +98,7 @@
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-option-label">
                             <!-- Hidden label element for accessibility -->
-                            <span id="user-option-label" class="sr-only">User Options</span>
+                            <span id="user-option-label" class="sr-only">Options</span>
                             
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
@@ -271,12 +274,8 @@
     </footer>
     <!-- /.footer -->
 
-
 </body>
 
-<!-- Mailchimp -->
-<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = EMAIL; ftypes[0] = merge; fnames[1] = MMERGE1; ftypes[1] = merge; false }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 
 
 </html>
