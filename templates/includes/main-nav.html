@@ -1,3 +1,8 @@
+
+To ensure that your HTML code follows best practices and is free of accessibility issues, here's how your code should look with appropriate aria-labelledby attributes:
+
+html
+Copy code
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
@@ -9,21 +14,20 @@
             <a class="logo-font font-weight-bold nav-link mr-5 " href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-label="Filter Products" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'designproducts' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'designproducts' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'designproducts' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'designproducts' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
+                <a href="{% url 'designproducts' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'designproducts'%}" class="dropdown-item">All Products</a>
             </div>
         </li>
     </ul>
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="banner-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="banner-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 World Display
             </a>
-            <div class="dropdown-menu border-0" aria-label="Banner Link" aria-labelledby="banners-link">
+            <div class="dropdown-menu border-0" aria-labelledby="banner-link">
                 <a href="{% url 'designproducts'%}?category=banners" class="dropdown-item">Banners</a>
                 <a href="{% url 'designproducts'%}?category=posters" class="dropdown-item">Posters</a>
                 <a href="{% url 'designproducts'%}?category=signs" class="dropdown-item">Signs</a>
@@ -33,13 +37,12 @@
     </ul>
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="badges-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="badges-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Business
             </a>
-            <div class="dropdown-menu border-0" aria-label="Badges Link" aria-labelledby="badges-link">
+            <div class="dropdown-menu border-0" aria-labelledby="badges-link">
                 <a href="{% url 'designproducts'%}?category=badges" class="dropdown-item">Badges</a>
-                <a href="{% url 'designproducts'%}?category=businesscards" class="dropdown-item">Business cards</a>                
+                <a href="{% url 'designproducts'%}?category=businesscards" class="dropdown-item">Business cards</a>
                 <a href="{% url 'designproducts'%}?category=lanyards" class="dropdown-item">Lanyards</a>
                 <a href="{% url 'designproducts'%}?category=badges,businesscards,lanyards" class="dropdown-item">All Badges</a>
             </div>
@@ -47,46 +50,42 @@
     </ul>
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link" href="#" id="clothing-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Clothing
             </a>
-            <div class="dropdown-menu border-0" aria-label="Clothes Link" aria-labelledby="clothes-link">
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'designproducts'%}?category=aprons" class="dropdown-item">Aprons</a>
-                <a href="{% url 'designproducts'%}?category=bags" class="dropdown-item">Bags</a>                
+                <a href="{% url 'designproducts'%}?category=bags" class="dropdown-item">Bags</a>
                 <a href="{% url 'designproducts'%}?category=hats" class="dropdown-item">Hats</a>
                 <a href="{% url 'designproducts'%}?category=pillows" class="dropdown-item">Pillows</a>
                 <a href="{% url 'designproducts'%}?category=tshirts" class="dropdown-item">Tshirts</a>
-                <a href="{% url 'designproducts'%}?category=aprons,bags,hats,pillows,tshirts" class="dropdown-item">Bags &amp; Clothing</a>
+                <a href="{% url 'designproducts'%}?category=aprons,bags,hats,pillows,tshirts" class="dropdown-item">Bags & Clothing</a>
             </div>
         </li>
     </ul>
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link" href="#" id="mugs-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link" href="#" id="mugs-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Giveaways
             </a>
-            <div class="dropdown-menu border-0" aria-label="Mugs Link" aria-labelledby="mugs-link">                
+            <div class="dropdown-menu border-0" aria-labelledby="mugs-link">
                 <a href="{% url 'designproducts'%}?category=coasters" class="dropdown-item">Coasters</a>
                 <a href="{% url 'designproducts'%}?category=drinkbottles" class="dropdown-item">Drink bottles</a>
                 <a href="{% url 'designproducts'%}?category=keyrings" class="dropdown-item">Keyrings</a>
                 <a href="{% url 'designproducts'%}?category=mugs" class="dropdown-item">Mugs</a>
                 <a href="{% url 'designproducts'%}?category=pens" class="dropdown-item">Pens</a>
-                <a href="{% url 'designproducts'%}?category=coasters,drinkbottles,keyrings,mugs,pens" class="dropdown-item">All Mugs &amp; Giveaways</a>
-                
+                <a href="{% url 'designproducts'%}?category=coasters,drinkbottles,keyrings,mugs,pens" class="dropdown-item">All Mugs & Giveaways</a>
             </div>
         </li>
     </ul>
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link" href="#" id="golf-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link" href="#" id="golf-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Golf
             </a>
-            <div class="dropdown-menu border-0" aria-label="Golf Link" aria-labelledby="golf-link">                
+            <div class="dropdown-menu border-0" aria-labelledby="golf-link">
                 <a href="{% url 'designproducts'%}?category=golfballs" class="dropdown-item">Golf balls</a>
-                <a href="{% url 'designproducts'%}?category=golfumbrellas" class="dropdown-item">Golf umbrellas</a>                
+                <a href="{% url 'designproducts'%}?category=golfumbrellas" class="dropdown-item">Golf umbrellas</a>
                 <a href="{% url 'designproducts'%}?category=pitchforks" class="dropdown-item">Pitch forks</a>
                 <a href="{% url 'designproducts'%}?category=towels" class="dropdown-item">Towels</a>
                 <a href="{% url 'designproducts'%}?category=golfballs,golfumbrellas,pitchforks,towels" class="dropdown-item">All Golf Products</a>
