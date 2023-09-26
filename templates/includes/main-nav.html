@@ -9,7 +9,7 @@
             <a class="logo-font font-weight-bold nav-link mr-5 " href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-label="Filter Products">
+            <div class="dropdown-menu border-0" aria-label="Filter Products" aria-labelledby="all-products-link">
                 <a href="{% url 'designproducts' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'designproducts' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'designproducts' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -23,7 +23,7 @@
                 aria-haspopup="true" aria-expanded="false">
                 World Display
             </a>
-            <div class="dropdown-menu border-0" aria-label="Banner Link">
+            <div class="dropdown-menu border-0" aria-label="Banner Link" aria-labelledby="banners-link">
                 <a href="{% url 'designproducts'%}?category=banners" class="dropdown-item">Banners</a>
                 <a href="{% url 'designproducts'%}?category=posters" class="dropdown-item">Posters</a>
                 <a href="{% url 'designproducts'%}?category=signs" class="dropdown-item">Signs</a>
@@ -37,7 +37,7 @@
                 aria-haspopup="true" aria-expanded="false">
                 Business
             </a>
-            <div class="dropdown-menu border-0" aria-label="Badges Link">
+            <div class="dropdown-menu border-0" aria-label="Badges Link" aria-labelledby="badges-link">
                 <a href="{% url 'designproducts'%}?category=badges" class="dropdown-item">Badges</a>
                 <a href="{% url 'designproducts'%}?category=businesscards" class="dropdown-item">Business cards</a>                
                 <a href="{% url 'designproducts'%}?category=lanyards" class="dropdown-item">Lanyards</a>
@@ -51,7 +51,7 @@
                 aria-haspopup="true" aria-expanded="false">
                 Clothing
             </a>
-            <div class="dropdown-menu border-0" aria-label="Clothes Link">
+            <div class="dropdown-menu border-0" aria-label="Clothes Link" aria-labelledby="clothes-link">
                 <a href="{% url 'designproducts'%}?category=aprons" class="dropdown-item">Aprons</a>
                 <a href="{% url 'designproducts'%}?category=bags" class="dropdown-item">Bags</a>                
                 <a href="{% url 'designproducts'%}?category=hats" class="dropdown-item">Hats</a>
@@ -67,7 +67,7 @@
                 aria-haspopup="true" aria-expanded="false">
                 Giveaways
             </a>
-            <div class="dropdown-menu border-0" aria-label="Mugs Link">                
+            <div class="dropdown-menu border-0" aria-label="Mugs Link" aria-labelledby="mugs-link">                
                 <a href="{% url 'designproducts'%}?category=coasters" class="dropdown-item">Coasters</a>
                 <a href="{% url 'designproducts'%}?category=drinkbottles" class="dropdown-item">Drink bottles</a>
                 <a href="{% url 'designproducts'%}?category=keyrings" class="dropdown-item">Keyrings</a>
@@ -84,7 +84,7 @@
                 aria-haspopup="true" aria-expanded="false">
                 Golf
             </a>
-            <div class="dropdown-menu border-0" aria-label="Golf Link">                
+            <div class="dropdown-menu border-0" aria-label="Golf Link" aria-labelledby="golf-link">                
                 <a href="{% url 'designproducts'%}?category=golfballs" class="dropdown-item">Golf balls</a>
                 <a href="{% url 'designproducts'%}?category=golfumbrellas" class="dropdown-item">Golf umbrellas</a>                
                 <a href="{% url 'designproducts'%}?category=pitchforks" class="dropdown-item">Pitch forks</a>

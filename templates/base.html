@@ -93,7 +93,10 @@
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-label="User Options">
+                        <div class="dropdown-menu border-0" aria-labelledby="user-option-label">
+                            <!-- Hidden label element for accessibility -->
+                            <span id="user-option-label" class="sr-only">User Options</span>
+                            
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_designproduct' %}" class="dropdown-item">Order Management</a>
@@ -271,9 +274,9 @@
 
 </body>
 
-<!-- Mailchimp script-->
-<script type='text/javascript' src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = EMAIL; ftypes[0] = merge; fnames[1] = MMERGE1; ftypes[1] = merge; false }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+<!-- Mailchimp -->
+<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = EMAIL; ftypes[0] = merge; fnames[1] = MMERGE1; ftypes[1] = merge; false }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 
 
 </html>
