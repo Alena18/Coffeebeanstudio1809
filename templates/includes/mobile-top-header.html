@@ -6,14 +6,14 @@
             <p class="my-0 alltext">Search</p>
         </div>
     </a>
-    <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search" id="mobile-search">
+    <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
         <form class="form" method="GET" action="{% url 'designproducts'%}">
             <div class="input-group w-100">
                 <input class="form-control border  rounded-0" type="text" name="q" placeholder="Search our site">
                 <div class="input-group-append">
-                    <button class="form-control form-control btn border rounded-8" type="submit" aria-labelledby="search for mobile" id="search for mobile">
+                    <button class="form-control form-control btn border rounded-8" type="submit" aria-labelledby="search for mobile">
                         <span class="icon">
-                            <i class="fas fa-search" aria-labelledby="search for mobile" id="search for mobile"></i>
+                            <i class="fas fa-search" aria-labelledby="search for mobile"></i>
                         </span>
                     </button>
                 </div>
@@ -28,7 +28,7 @@
             <p class="my-0 alltext">My Account</p>
         </div>
     </a>
-    <div class="dropdown-menu border-0" aria-labelledby="user-options" id="user-options">
+    <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
                 <a href="{% url 'add_designproduct' %}" class="dropdown-item">Promotional Product Design Solution</a>
