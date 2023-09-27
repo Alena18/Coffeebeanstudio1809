@@ -28,9 +28,9 @@
             <p class="my-0 alltext">My Account</p>
         </div>
     </a>
-    <div class="dropdown-menu border-0" aria-label="User Options" aria-labelledby="user-options">
+    <div class="dropdown-menu border-0" aria-labelledby="options">
         <!-- Hidden label element for accessibility -->
-        <span id="user-options" class="sr-only">Options</span>
+        <span id="options" class="sr-only">Options</span>
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
                 <a href="{% url 'add_designproduct' %}" class="dropdown-item">Promotional Product Design Solution</a>
