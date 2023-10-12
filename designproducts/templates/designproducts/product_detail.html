@@ -33,13 +33,14 @@
                 <p class="lead mb-0 text-left font-weight-bold alltext">€{{ designproduct.price }}</p>
                 {% if designproduct.category %}
                 <p class="small mt-1 mb-0">
-                    <a class="light_brown" href="{% url 'designproducts' %}?category={{ designproduct.category.name }}">
+                    <a class="darkbrownnohover"
+                        href="{% url 'designproducts' %}?category={{ designproduct.category.name }}">
                         <i class="fas fa-tag mr-1"></i>{{ designproduct.category.friendly_name }}
                     </a>
                 </p>
                 {% endif %}
                 {% if designproduct.rating %}
-                <small><i class="fas fa-star mr-1"></i>{{ designproduct.rating }} / 5</small>
+                <small class="darkbrownnohover"><i class="fas fa-star mr-1"></i>{{ designproduct.rating }} / 5</small>
                 {% else %}
                 <small>No Rating</small>
                 {% endif %}
@@ -54,6 +55,23 @@
                     {% csrf_token %}
                     {% include "bag/sizes.html" %}
                 </form>
+            </div>
+            <!-- Likes -->
+            <div>
+                {% if user.is_authenticated %}
+                <form class="d-inline" action="{% url 'like_toggle' designproduct.id %}" method="POST">
+                    {% csrf_token %}
+                    {% if liked %}
+                    <button type="submit" class="btn-no-outline darkbrownnohover"><i class="fas fa-heart"></i></button>
+                    {% else %}
+                    <button type="submit" class="btn-no-outline darkbrownnohover"><i class="far fa-heart"></i></button>
+                    {% endif %}
+                </form>
+                {% else %}
+                <span class="darkbrownnohover"><i class="far fa-heart"></i></span>
+                {% endif %}
+                <!-- The number of likes goes before the closing strong tag -->
+                <span class="sizethreerem darkbrownnohover">{{ designproduct.likes.count }}</span>
             </div>
         </div>
     </div>

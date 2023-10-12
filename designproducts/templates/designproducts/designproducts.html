@@ -85,14 +85,19 @@
                                         €{{ designproduct.price }}</p>
                                     {% if designproduct.category %}
                                     <p class="small mt-1 mb-0">
-                                        <a class="light_brown"
+                                        <a class="darkbrownnohover"
                                             href="{% url 'designproducts' %}?category={{ designproduct.category.name }}">
                                             <i class="fas fa-tag mr-1"></i>{{ designproduct.category.friendly_name }}
                                         </a>
                                     </p>
                                     {% endif %}
                                     {% if designproduct.rating %}
-                                    <small><i class="fas fa-star mr-1"></i>{{ designproduct.rating }} / 5</small>
+                                    <small class="darkbrownnohover"><i class="fas fa-star mr-1"></i>{{ designproduct.rating }} / 5</small>
+                                    <p>
+                                    <!-- The number of likes goes before the closing strong tag -->
+                                    <small class="darkbrownnohover"><i class="far fa-heart"></i>
+                                    <span class="sizetworem darkbrownnohover">{{ designproduct.likes.count }}</span></small>
+                                    </p>
                                     {% else %}
                                     <small>No Rating</small>
                                     {% endif %}

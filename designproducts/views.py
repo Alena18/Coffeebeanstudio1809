@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.contrib.auth.models import User
 
 from .models import Product, Category
 from .forms import ProductForm
@@ -138,3 +139,17 @@ def delete_designproduct(request, designproduct_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('designproducts'))
+
+@login_required
+def like_toggle(request, designproduct_id):
+    designproduct = get_object_or_404(Product, pk=designproduct_id)
+    user = request.user
+
+    if user in designproduct.likes.all():
+        designproduct.likes.remove(user)
+        liked = False
+    else:
+        designproduct.likes.add(user)
+        liked = True
+
+    return redirect('product_detail', designproduct_id=designproduct_id)

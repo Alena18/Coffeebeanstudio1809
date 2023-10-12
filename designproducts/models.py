@@ -1,6 +1,5 @@
 from django.db import models
-
-from django.db import models
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -37,6 +36,15 @@ class Product(models.Model):
                                  null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+    likes = models.ManyToManyField(User, through='Likes', related_name='liked_products')
 
     def __str__(self):
         return self.name
+
+class Likes(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    designproduct = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product_likes')
+    liked = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"{self.user.username} likes {self.designproduct.name}"
