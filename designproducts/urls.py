@@ -9,5 +9,8 @@ urlpatterns = [
     path('add/', views.add_designproduct, name='add_designproduct'),
     path('edit/<int:designproduct_id>/', views.edit_designproduct, name='edit_designproduct'),  # noqa
     path('delete/<int:designproduct_id>/', views.delete_designproduct, name='delete_designproduct'),  # noqa
-
+    # User comments
+    path('add_comment/<int:designproduct_id>/', views.add_comment, name='add_comment'),
+    path('edit_comment/<int:comment_id>/', views.edit_comment, name='edit_comment'),
+    path('delete_comment/<int:comment_id>/', views.delete_comment, name='delete_comment'),
     ]

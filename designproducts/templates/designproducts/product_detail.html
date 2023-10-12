@@ -73,6 +73,26 @@
                 <!-- The number of likes goes before the closing strong tag -->
                 <span class="sizethreerem darkbrownnohover">{{ designproduct.likes.count }}</span>
             </div>
+            {% block content %}
+            <!-- Iterate through comments and display them -->
+            <div class="comments">
+                {% for comment in user_comments %}
+                <div class="comment">
+                    <p><strong>{{ comment.user.username }}</strong> said:</p>
+                    <p>{{ comment.comment }}</p>
+                    {% if user.is_authenticated and comment.user == user %}
+                    <a href="{% url 'edit_comment' comment.id %}">Edit Comment</a>
+                    <a href="{% url 'delete_comment' comment.id %}">Delete Comment</a>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+
+            <a href="{% url 'designproducts' %}">Back to All Products</a>
+            <a href="{% url 'add_comment' designproduct.id %}">Add a Comment</a>
+            {% endblock %}
+            <!-- Display the number of comments -->
+            <p>Number of Comments: {{ user_comments.count }}</p>
         </div>
     </div>
 </div>

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Edit Comment</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ comment_form.as_p }}
+  <button type="submit">Update</button>
+</form>
+<a href="{% url 'product_detail' comment.designproduct.id %}">Back to Product Detail</a>
+{% endblock %}

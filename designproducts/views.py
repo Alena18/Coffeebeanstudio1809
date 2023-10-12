@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.models import User
 
-from .models import Product, Category
+from .models import Product, Category, Likes, UserComments
 from .forms import ProductForm
 
 # Create your views here.
@@ -67,10 +67,27 @@ def product_detail(request, designproduct_id):
     designproduct = get_object_or_404(Product, pk=designproduct_id)
     user = request.user
     liked = user in designproduct.likes.all() if user.is_authenticated else False
+    user_comments = UserComments.objects.filter(designproduct=designproduct)
+
+    if request.method == 'POST':
+        comment_form = UserCommentForm(request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.user = request.user
+            new_comment.designproduct = designproduct
+            new_comment.save()
+            messages.success(request, 'Comment added successfully!')
+            return redirect(reverse('product_detail', args=[designproduct.id]))
+        else:
+            messages.error(request, 'Failed to add comment. Please ensure the form is valid.')
+    else:
+        comment_form = UserCommentForm()
 
     context = {
         'designproduct': designproduct,
         'liked': liked,
+        'user_comments': user_comments,
+        'comment_form': comment_form,
     }
 
     return render(request, 'designproducts/product_detail.html', context)
@@ -156,3 +173,72 @@ def like_toggle(request, designproduct_id):
         liked = True
 
     return redirect('product_detail', designproduct_id=designproduct_id)
+
+@login_required
+def add_comment(request, designproduct_id):
+    """ Add a comment to a product """
+    designproduct = get_object_or_404(Product, pk=designproduct_id)
+
+    if request.method == 'POST':
+        comment_form = UserCommentForm(request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.user = request.user
+            new_comment.designproduct = designproduct
+            new_comment.save()
+            messages.success(request, 'Comment added successfully!')
+            return redirect(reverse('product_detail', args=[designproduct.id]))
+        else:
+            messages.error(request, 'Failed to add comment. Please ensure the form is valid.')
+    else:
+        comment_form = UserCommentForm()
+
+    context = {
+        'designproduct': designproduct,
+        'comment_form': comment_form,
+    }
+
+    return render(request, 'designproducts/add_comment.html', context)
+
+@login_required
+def edit_comment(request, comment_id):
+    comment = get_object_or_404(UserComments, pk=comment_id)
+    if comment.user != request.user:
+        messages.error(request, 'You can only edit your own comments.')
+        return redirect(reverse('product_detail', args=[comment.designproduct.id]))
+
+    if request.method == 'POST':
+        comment_form = UserCommentForm(request.POST, instance=comment)
+        if comment_form.is_valid():
+            comment_form.save()
+            messages.success(request, 'Comment updated successfully!')
+            return redirect(reverse('product_detail', args=[comment.designproduct.id]))
+        else:
+            messages.error(request, 'Failed to update comment. Please ensure the form is valid.')
+    else:
+        comment_form = UserCommentForm(instance=comment)
+
+    context = {
+        'comment': comment,
+        'comment_form': comment_form,
+    }
+
+    return render(request, 'designproducts/edit_comment.html', context)
+
+@login_required
+def delete_comment(request, comment_id):
+    comment = get_object_or_404(UserComments, pk=comment_id)
+    if comment.user != request.user:
+        messages.error(request, 'You can only delete your own comments.')
+        return redirect(reverse('product_detail', args=[comment.designproduct.id]))
+    
+    if request.method == 'POST':
+        comment.delete()
+        messages.success(request, 'Comment deleted successfully!')
+        return redirect(reverse('product_detail', args=[comment.designproduct.id]))
+
+    context = {
+        'comment': comment,
+    }
+
+    return render(request, 'designproducts/delete_comment.html', context)

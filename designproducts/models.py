@@ -48,3 +48,12 @@ class Likes(models.Model):
 
     def __str__(self):
         return f"{self.user.username} likes {self.designproduct.name}"
+
+class UserComments(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    designproduct = models.ForeignKey('Product', on_delete=models.CASCADE)
+    comment = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username}'s comment on {self.designproduct.name}"
