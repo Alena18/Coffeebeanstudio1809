@@ -65,9 +65,12 @@ def product_detail(request, designproduct_id):
     """ A view to show individual product details """
 
     designproduct = get_object_or_404(Product, pk=designproduct_id)
+    user = request.user
+    liked = user in designproduct.likes.all() if user.is_authenticated else False
 
     context = {
         'designproduct': designproduct,
+        'liked': liked,
     }
 
     return render(request, 'designproducts/product_detail.html', context)

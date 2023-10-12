@@ -95,7 +95,7 @@
                                     <small class="darkbrownnohover"><i class="fas fa-star mr-1"></i>{{ designproduct.rating }} / 5</small>
                                     <p>
                                     <!-- The number of likes goes before the closing strong tag -->
-                                    <small class="darkbrownnohover"><i class="far fa-heart"></i>
+                                    <small class="darkbrownnohover"><i class="fas fa-heart"></i>
                                     <span class="sizetworem darkbrownnohover">{{ designproduct.likes.count }}</span></small>
                                     </p>
                                     {% else %}
@@ -104,8 +104,7 @@
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3 alltext">
                                         <a href="{% url 'edit_designproduct' designproduct.id %}">Edit</a> |
-                                        <a class="redtext"
-                                            href="{% url 'delete_designproduct' designproduct.id %}">Delete</a>
+                                        <a class="redtext" href="{% url 'delete_designproduct' designproduct.id %}">Delete</a>
                                     </small>
                                     {% endif %}
                                 </div>

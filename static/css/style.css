@@ -60,6 +60,13 @@ body {
     cursor:pointer;
 }
 
+.btn-no-outline {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+}
+
 .updatebtnhover:hover {
     color:#ab8240;
     text-decoration: underline;
