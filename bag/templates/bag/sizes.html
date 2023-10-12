@@ -70,6 +70,15 @@
             <option value="50 x 75cm" selected>50 x 75cm &#40; 20&quot; x 30&quot; &#41;</option>
         </select>
     </div>
+    {% elif t %}
+    <div class="col-12">
+        <p><strong>Size:</strong></p>
+        <select class="form-control rounded-8 w-50" name="product_size" id='id_product_size'>
+            <option value="30cm">30 x 30cm</option>
+            <option value="70cm">70 x 125cm</option>
+            <option value="50cm" selected>50 x 80cm</option>
+        </select>
+    </div>
     {% elif k %}
     <div class="col-12">
         <p><strong>Size:</strong></p>
