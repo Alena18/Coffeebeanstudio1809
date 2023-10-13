@@ -59,12 +59,12 @@
             <!-- Likes -->
             <div>
                 {% if user.is_authenticated %}
-                <form class="d-inline darkbrownnohover" action="{% url 'like_toggle' designproduct.id %}" method="POST">
+                <form class="d-inline" action="{% url 'like_toggle' designproduct.id %}" method="POST">
                     {% csrf_token %}
                     {% if liked %}
-                    <button type="submit" class="btn-no-outline"><i class="fas fa-heart"></i></button>
+                    <button type="submit" class="btn-no-outline darkbrownnohover"><i class="fas fa-heart"></i></button>
                     {% else %}
-                    <button type="submit" class="btn-no-outline"><i class="far fa-heart"></i></button>
+                    <button type="submit" class="btn-no-outline darkbrownnohover"><i class="far fa-heart"></i></button>
                     {% endif %}
                 </form>
                 {% else %}
@@ -73,26 +73,27 @@
                 <!-- The number of likes goes before the closing strong tag -->
                 <span class="sizethreerem darkbrownnohover">{{ designproduct.likes.count }}</span>
             </div>
-            {% block content %}
+            <!-- Comment Form: This form should be present at the top of the comments section to allow users to add new comments -->
+            <form method="post" action="{% url 'add_comment' designproduct.id %}" class="comments commentform">
+                {% csrf_token %}
+                {{ comment_form.comment.label_tag }}
+                {{ comment_form.comment }}
+                <button type="submit" class="btn btn-black rounded-8 text-uppercase btnsize">Add Comment</button>
+            </form>
+
             <!-- Iterate through comments and display them -->
             <div class="comments">
                 {% for comment in user_comments %}
                 <div class="comment">
                     <p><strong>{{ comment.user.username }}</strong> said:</p>
-                    <p>{{ comment.comment }}</p>
+                    <p class="comments bordercomment">{{ comment.comment }}</p>
                     {% if user.is_authenticated and comment.user == user %}
-                    <a href="{% url 'edit_comment' comment.id %}">Edit Comment</a>
-                    <a href="{% url 'delete_comment' comment.id %}">Delete Comment</a>
+                    <a href="{% url 'edit_comment' comment.id %}" class="btn btn-black rounded-8 text-uppercase btnsize">Edit Comment</a>
+                    <a href="{% url 'delete_comment' comment.id %}" class="btn btn-black rounded-8 text-uppercase btnsize">Delete Comment</a>
                     {% endif %}
                 </div>
                 {% endfor %}
             </div>
-
-            <a href="{% url 'designproducts' %}">Back to All Products</a>
-            <a href="{% url 'add_comment' designproduct.id %}">Add a Comment</a>
-            {% endblock %}
-            <!-- Display the number of comments -->
-            <p>Number of Comments: {{ user_comments.count }}</p>
         </div>
     </div>
 </div>

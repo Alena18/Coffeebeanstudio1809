@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import Q, Count
 from django.db.models.functions import Lower
 from django.contrib.auth.models import User
 
 from .models import Product, Category, Likes, UserComments
-from .forms import ProductForm
+from .forms import ProductForm, UserCommentForm
 
 # Create your views here.
 
@@ -19,6 +19,8 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+
+    designproducts = Product.objects.annotate(comment_count=Count('usercomments'))
 
     if request.GET:
         if 'sort' in request.GET:
