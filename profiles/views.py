@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
+from designproducts.models import Product
 
 from checkout.models import Order
 
@@ -20,15 +21,20 @@ def profile(request):
 
     form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
+    
+    # Retrieve the user's favorite products
+    favorite_products = request.user.favorite_products.all()  # Assuming you have a related name for favorite products
 
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
-        'on_profile_page': True
+        'on_profile_page': True,
+        'favorite_products': favorite_products,  # Pass favorite products to the template
     }
 
     return render(request, template, context)
+
 
 
 def order_history(request, order_number):

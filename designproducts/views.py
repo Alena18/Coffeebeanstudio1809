@@ -246,18 +246,27 @@ def delete_comment(request, comment_id):
     return render(request, 'designproducts/delete_comment.html', context)
 
 @login_required
-def favorite_list(request):
+def product_favorite(request):
     favorite_products = request.user.favorite_products.all()
-    return render(request, 'designproducts/favorite_list.html', {'favorite_products': favorite_products})
+    context = {
+        'favorite_products': favorite_products,
+    }
+    return render(request, 'designproducts/product_favorite.html', context)
 
 @login_required
-def toggle_favorite(request, designproduct_id):
+def add_favorite(request, designproduct_id):
     designproduct = get_object_or_404(Product, pk=designproduct_id)
     user = request.user
+    if designproduct not in user.favorite_products.all():
+        user.favorite_products.add(designproduct)
+        messages.success(request, f'Added {designproduct.name} to your favorites.')
+    return redirect('product_favorite')  # Redirect to the product_favorite page
 
-    if designproduct.favorited_by.filter(id=user.id).exists():
-        designproduct.favorited_by.remove(user)
-    else:
-        designproduct.favorited_by.add(user)
-
-    return redirect('product_detail', designproduct_id=designproduct_id)
+@login_required
+def remove_favorite(request, designproduct_id):
+    designproduct = get_object_or_404(Product, pk=designproduct_id)
+    user = request.user
+    if designproduct in user.favorite_products.all():
+        user.favorite_products.remove(designproduct)
+        messages.success(request, f'Removed {designproduct.name} from your favorites.')
+    return redirect('product_favorite')  # Redirect to the favorites page

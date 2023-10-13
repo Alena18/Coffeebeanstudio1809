@@ -106,6 +106,17 @@
                                             </a>
                                         </small>
                                     </p>
+                                    <!-- Add to favorite -->
+                                    <div>
+                                        {% if user.is_authenticated %}
+                                        {% if designproduct not in user.favorite_products.all %}
+                                            <form class="d-inline" action="{% url 'add_favorite' designproduct.id %}" method="POST">
+                                                {% csrf_token %}
+                                                <button type="submit" class="addfavbtn addfavbtnprod">Add to Favorites</button>
+                                            </form>
+                                        {% endif %}
+                                    {% endif %}
+                                    </div>
                                     {% else %}
                                     <small>No Rating</small>
                                     {% endif %}

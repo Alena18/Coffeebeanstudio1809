@@ -72,7 +72,27 @@
                     </table>
                 </div>
             </div>
-        </div>
+            <!-- Favorite -->
+<div class="col-12 col-lg-6">
+    <p class="sizethreerem">My Favorite Products</p>
+    <ul class="alltext" id="favlist">
+        {% if favorite_products %}
+        {% for designproduct in favorite_products %}
+        <li class="alltext sizetworem">
+            <i class="fa-solid fa-star star"></i>
+            <a href="{% url 'product_detail' designproduct.id %}" class="product-link">{{ designproduct.name }}</a>
+                <form class="d-inline" action="{% url 'remove_favorite' designproduct.id %}" method="POST">
+                {% csrf_token %}
+                <button type="submit" class="remfavbtn remfavbtnprof">Remove</button>
+                </form>
+            </li>
+        {% endfor %}
+        {% else %}
+        <p class="marginfav">You have no favorite products yet.</p>
+        {% endif %}
+    </ul>
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}

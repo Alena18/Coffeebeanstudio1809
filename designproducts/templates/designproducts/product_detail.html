@@ -95,19 +95,16 @@
                 {% endfor %}
             </div>
             <!-- Add to favorite -->
-            {% if user.is_authenticated %}
-            {% if favorited %}
-                <form class="d-inline" action="{% url 'toggle_favorite' designproduct.id %}" method="POST">
-                    {% csrf_token %}
-                    <button type="submit" class="addfavbtn rounded-8">Remove from Favorites</button>
-                </form>
-            {% else %}
-                <form class="d-inline" action="{% url 'toggle_favorite' designproduct.id %}" method="POST">
-                    {% csrf_token %}
-                    <button type="submit" class="addfavbtn rounded-8">Add to Favorites</button>
-                </form>
+            <div>
+                {% if user.is_authenticated %}
+                {% if designproduct not in user.favorite_products.all %}
+                    <form class="d-inline" action="{% url 'add_favorite' designproduct.id %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit" class="addfavbtn">Add to Favorites</button>
+                    </form>
+                {% endif %}
             {% endif %}
-            {% endif %}
+            </div>
         </div>
     </div>
 </div>

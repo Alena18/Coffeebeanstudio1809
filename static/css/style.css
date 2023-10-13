@@ -72,9 +72,14 @@ body {
     padding: 0;
 }
 
-#editbtn, #delbtn {
+#editbtn, #delbtn, .remfavbtn {
     font-size: 1.6rem;
     margin-right: 1%;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
 }
 
 .comments {
@@ -125,6 +130,39 @@ body {
     text-decoration: underline;
 }
 
+
+/* Favorite */
+.remfavbtn {
+    margin-left: 2%;
+    background-color: #fefcfa;
+    border: 1px solid #42250F;
+    color: #42250F;
+    border-radius: .3rem;
+    letter-spacing: .1vw;
+    padding: 0.5%;
+    font-size: 1rem;
+    
+}
+
+#favlist {
+    margin-top: 5px;
+    list-style: none;
+}
+
+.marginfav {
+    margin-left: 2%;
+    color: #42250F;
+}
+
+.star {
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.remfavbtnprof {
+    vertical-align: middle;
+}
+
 .addfavbtn {
     background-color:#42250F;
     font-family: "Bebas Neue", serif;
@@ -135,7 +173,15 @@ body {
     margin-right: 0.51%;
     border-radius: 1rem;
     padding: 3%;
+    margin-bottom: 5%;
 
+}
+
+.addfavbtnprod {
+    font-size: 1.4rem;
+}
+.marginkeepshop {
+    margin-bottom: 4%;
 }
 
 .dropdown-item {

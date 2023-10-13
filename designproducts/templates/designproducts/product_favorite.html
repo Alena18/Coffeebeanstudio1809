@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="marginfav">My Favorite Products</h1>
+{% if favorite_products %}
+<ul class="alltext" id="favlist">
+    {% for designproduct in favorite_products %}
+    <li class="alltext sizetworem">
+        <i class="fa-solid fa-star star"></i>
+        {{ designproduct.name }}
+        <form class="d-inline" action="{% url 'remove_favorite' designproduct.id %}" method="POST">
+            {% csrf_token %}
+            <div class="button-container">
+                <a href="{% url 'product_detail' designproduct.id %}" class="btn marginfav">View Product</a>
+                <button type="submit" class="remfavbtn">Remove from Favorites</button>
+            </div>
+        </form>
+    </li>
+    {% endfor %}
+</ul>
+
+{% else %}
+<p class="marginfav">You have no favorite products yet.</p>
+{% endif %}
+<a href="{% url 'designproducts' %}" class="btn rounded-8 btn-lg text-center marginfav marginkeepshop">
+    <span class="icon">
+        <i class="fas fa-chevron-left"></i>
+    </span>
+    <span class="text-uppercase alltext text-center">Keep Shopping</span>
+    
+</a>
+<a href="{% url 'profile' %}" class="btn rounded-8 btn-lg text-center marginfav marginkeepshop">
+    <span class="icon">
+        <i class="fas fa-chevron-left"></i>
+    </span>
+    <span class="text-uppercase alltext text-center">Back to My Profile</span>
+</a>
+{% endblock %}
