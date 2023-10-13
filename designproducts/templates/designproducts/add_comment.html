@@ -1,10 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2>Add Comment</h2>
-<form method="post">
+<p class="margin-top"> 
+<form method="post" class="alltext text-center commentform">
   {% csrf_token %}
   {{ comment_form.as_p }}
-  <button type="submit">Submit</button>
+  <button type="submit" class="btn btn-black rounded-8 text-uppercase btnsizeform">Submit</button>
+  <a href="{% url 'designproducts' %}" class="btn btn-black rounded-8 text-uppercase btnsize">
+    <span class="icon">
+        <i class="fas fa-chevron-left"></i>
+    </span>
+    <span class="text-uppercase alltext">Keep Shopping</span>
+</a>
 </form>
-<a href="{% url 'product_detail' designproduct.id %}">Back to Product Detail</a>
+</p>
 {% endblock %}

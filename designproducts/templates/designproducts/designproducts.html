@@ -92,11 +92,20 @@
                                     </p>
                                     {% endif %}
                                     {% if designproduct.rating %}
-                                    <small class="darkbrownnohover"><i class="fas fa-star mr-1"></i>{{ designproduct.rating }} / 5</small>
-                                    <p>
+                                    <small class="darkbrownnohover"><i class="fas fa-star mr-1"></i>{{ designproduct.rating }} / 5</small>                                  
                                     <!-- The number of likes goes before the closing strong tag -->
+                                    <p>
                                     <small class="darkbrownnohover"><i class="fas fa-heart"></i>
                                     <span class="sizetworem darkbrownnohover">{{ designproduct.likes.count }}</span></small>
+                                    </p>
+                                    <!-- Display the number of comments -->
+                                    <p>
+                                        <small class="sizetworem darkbrownnohover">
+                                            <a href="{% url 'add_comment' designproduct.id %}">
+                                            <i class="far fa-comments"></i>
+                                            <span class="sizetworem darkbrownnohover">{{ designproduct.comment_count }}</span>
+                                            </a>
+                                        </small>
                                     </p>
                                     {% else %}
                                     <small>No Rating</small>

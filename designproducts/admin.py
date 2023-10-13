@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from django.contrib import admin
-from .models import Product, Category
+from .models import Product, Category, UserComments
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
@@ -21,6 +21,9 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
-admin.site.register(Product, ProductAdmin)
+class UserCommentsAdmin(admin.ModelAdmin):
+    list_display = ['user', 'designproduct', 'date_added', 'comment']
 
+admin.site.register(UserComments, UserCommentsAdmin)
+admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)

@@ -57,3 +57,7 @@ class UserComments(models.Model):
 
     def __str__(self):
         return f"{self.user.username}'s comment on {self.designproduct.name}"
+
+    class Meta:
+            verbose_name = "User Comment"  # Customize the singular name
+            verbose_name_plural = "User Comments"  # Customize the plural name
