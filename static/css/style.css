@@ -125,6 +125,19 @@ body {
     text-decoration: underline;
 }
 
+.addfavbtn {
+    background-color:#42250F;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    color: #ab8240;
+    letter-spacing: .15vw;
+    font-size: 2rem;
+    margin-right: 0.51%;
+    border-radius: 1rem;
+    padding: 3%;
+
+}
+
 .dropdown-item {
     font-family: "Bebas Neue", serif;
     color: #42250F;
@@ -136,7 +149,7 @@ body {
 }
 
 #banner-link,
-#all-products-link,
+#allproducts-link,
 #badges-link,
 #clothing-link,
 #mugs-link,
@@ -153,6 +166,7 @@ body {
     }
 
 .contacts:hover,
+
 .btn:hover {
     color: #ab8240;
 }
@@ -223,8 +237,8 @@ a.category-badge > span.badge:hover {
     color: #42250F;
 }
 
-#mc_embed_signup .button {
-    background-color:#42250F;
+#mc_embed_signup .button,{
+    background-color: #42250F;
 }
 
 #mc_embed_signup .button:hover {

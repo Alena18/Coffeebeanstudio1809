@@ -13,4 +13,7 @@ urlpatterns = [
     path('add_comment/<int:designproduct_id>/', views.add_comment, name='add_comment'),
     path('edit_comment/<int:comment_id>/', views.edit_comment, name='edit_comment'),
     path('delete_comment/<int:comment_id>/', views.delete_comment, name='delete_comment'),
+    # User favorite
+    path('favorite/', views.favorite_list, name='favorite_list'),
+    path('toggle_favorite/<int:designproduct_id>/', views.toggle_favorite, name='toggle_favorite'),
     ]

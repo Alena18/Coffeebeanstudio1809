@@ -100,8 +100,7 @@
                                     </p>
                                     <!-- Display the number of comments -->
                                     <p>
-                                        <small class="sizetworem darkbrownnohover">
-                                            <a href="{% url 'add_comment' designproduct.id %}">
+                                        <small class="sizet{% url 'product_detail' designproduct.id %}                             <a href="{% url 'add_comment' designproduct.id %}">
                                             <i class="far fa-comments"></i>
                                             <span class="sizetworem darkbrownnohover">{{ designproduct.comment_count }}</span>
                                             </a>

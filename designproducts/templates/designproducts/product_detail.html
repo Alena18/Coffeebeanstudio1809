@@ -88,12 +88,26 @@
                     <p><strong>{{ comment.user.username }}</strong> said:</p>
                     <p class="comments bordercomment">{{ comment.comment }}</p>
                     {% if user.is_authenticated and comment.user == user %}
-                    <a href="{% url 'edit_comment' comment.id %}" class="btn btn-black rounded-8 text-uppercase btnsize">Edit Comment</a>
-                    <a href="{% url 'delete_comment' comment.id %}" class="btn btn-black rounded-8 text-uppercase btnsize">Delete Comment</a>
+                    <a href="{% url 'edit_comment' comment.id %}" class="btn rounded-8 text-uppercase btnsize">Edit Comment</a>
+                    <a href="{% url 'delete_comment' comment.id %}" class="btn rounded-8 text-uppercase btnsize">Delete Comment</a>
                     {% endif %}
                 </div>
                 {% endfor %}
             </div>
+            <!-- Add to favorite -->
+            {% if user.is_authenticated %}
+            {% if favorited %}
+                <form class="d-inline" action="{% url 'toggle_favorite' designproduct.id %}" method="POST">
+                    {% csrf_token %}
+                    <button type="submit" class="addfavbtn rounded-8">Remove from Favorites</button>
+                </form>
+            {% else %}
+                <form class="d-inline" action="{% url 'toggle_favorite' designproduct.id %}" method="POST">
+                    {% csrf_token %}
+                    <button type="submit" class="addfavbtn rounded-8">Add to Favorites</button>
+                </form>
+            {% endif %}
+            {% endif %}
         </div>
     </div>
 </div>

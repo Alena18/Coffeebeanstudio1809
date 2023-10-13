@@ -244,3 +244,20 @@ def delete_comment(request, comment_id):
     }
 
     return render(request, 'designproducts/delete_comment.html', context)
+
+@login_required
+def favorite_list(request):
+    favorite_products = request.user.favorite_products.all()
+    return render(request, 'designproducts/favorite_list.html', {'favorite_products': favorite_products})
+
+@login_required
+def toggle_favorite(request, designproduct_id):
+    designproduct = get_object_or_404(Product, pk=designproduct_id)
+    user = request.user
+
+    if designproduct.favorited_by.filter(id=user.id).exists():
+        designproduct.favorited_by.remove(user)
+    else:
+        designproduct.favorited_by.add(user)
+
+    return redirect('product_detail', designproduct_id=designproduct_id)
