@@ -613,7 +613,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     }
 
     #delivery-banner h4 {
-        font-size: 2rem;
+        font-size: .9rem;
     }
 
     .btn.btn-outline-black.rounded-8,
