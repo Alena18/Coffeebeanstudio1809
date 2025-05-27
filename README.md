@@ -1,6 +1,6 @@
 # COFFEEBEANSTUDIO1809
 
-The live link can be found here [ CoffeeBeanStudio1809 website ](https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com/)
+The live link can be found here [ CoffeeBeanStudio1809 website ](https://coffeebeanstudio1809.onrender.com/)
 
 Welcome to Coffeebeanstudio1809, your ultimate destination for innovative promotional product design solutions. Our mission is to revolutionize the way businesses and individuals approach promotions and gifting. Unlike traditional methods, we bring a fresh and creative approach to the table, ensuring your promotional efforts are not only effective but also memorable.
 At Coffeebeanstudio1809, we understand the power of thoughtful and well-designed promotional products. Our team work tirelessly to curate a diverse range of product ideas that cater to various occasions, including birthdays, weddings, business events, parties, holy communions, and more. We believe that every occasion deserves a unique touch, and our designs reflect just that.
@@ -72,39 +72,37 @@ I've used [Figma](https://www.figma.com/) to design my site wireframes.
 
 ### Home Page Paper Wireframes
 
-| Size | Screenshot |
-| --- | --- |
+| Size   | Screenshot                                      |
+| ------ | ----------------------------------------------- |
 | Mobile | ![screenshot](documentation/paperwireframe.png) |
-| Mobile | ![screenshot](documentation/paperwiremob.png) |
-| Mobile | ![screenshot](documentation/homewireframe.png) |
+| Mobile | ![screenshot](documentation/paperwiremob.png)   |
+| Mobile | ![screenshot](documentation/homewireframe.png)  |
 
 ### Home Page Wireframes
 
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/homemob.png) |
-| Tablet | ![screenshot](documentation/notehome.png) |
+| Size    | Screenshot                                |
+| ------- | ----------------------------------------- |
+| Mobile  | ![screenshot](documentation/homemob.png)  |
+| Tablet  | ![screenshot](documentation/notehome.png) |
 | Desktop | ![screenshot](documentation/homedesk.png) |
 
 ### Product View Page Wireframes
 
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/productviewmob.png) |
-| Tablet | ![screenshot](documentation/noteprodview.png) |
-| Desktop | ![screenshot](documentation/prodviewdesk.png) |
+| Size    | Screenshot                                      |
+| ------- | ----------------------------------------------- |
+| Mobile  | ![screenshot](documentation/productviewmob.png) |
+| Tablet  | ![screenshot](documentation/noteprodview.png)   |
+| Desktop | ![screenshot](documentation/prodviewdesk.png)   |
 
 ### Product Detail Page Wireframes
 
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/bagmob.png) |
-| Tablet | ![screenshot](documentation/noteproddetail.png) |
+| Size    | Screenshot                                         |
+| ------- | -------------------------------------------------- |
+| Mobile  | ![screenshot](documentation/bagmob.png)            |
+| Tablet  | ![screenshot](documentation/noteproddetail.png)    |
 | Desktop | ![screenshot](documentation/productdetaildesk.png) |
 
-
 **For more details of whole UX Design process see** [UX research](documentation/CoffeeBeanStudio1809%20-%20PP5.pdf)
-
 
 ## Features
 
@@ -159,7 +157,7 @@ I've used [Figma](https://www.figma.com/) to design my site wireframes.
 - Sort Available Products
 
   - Users can easily find products based on criteria like ratings, prices, and categories.
-  
+
 - Sort Specific Category
 
   - Users can quickly identify the best-priced or best-rated products within a specific category.
@@ -217,7 +215,6 @@ I've used [Figma](https://www.figma.com/) to design my site wireframes.
   - Store administrators can efficiently manage the product catalog by adding, updating, or removing items.
 
 ![screenshot](documentation/adminsite.png)
-
 
 ### Future Features
 
@@ -284,7 +281,6 @@ I've used [Figma](https://www.figma.com/) to design my site wireframes.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
 
 ## Database Design
-
 
 ```python
 class Category(models.Model):
@@ -354,50 +350,48 @@ class UserComments(models.Model):
 
 - Table: **Product**
 
-    | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
-    | | sku | CharField | |
-    | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
+  | **PK** | **id** (unique) | Type         | Notes                    |
+  | ------ | --------------- | ------------ | ------------------------ |
+  | **FK** | category        | ForeignKey   | FK to **Category** model |
+  |        | sku             | CharField    |                          |
+  |        | name            | CharField    |                          |
+  |        | description     | TextField    |                          |
+  |        | has_sizes       | BooleanField |                          |
+  |        | price           | DecimalField |                          |
+  |        | rating          | DecimalField |                          |
+  |        | image_url       | URLField     |                          |
+  |        | image           | ImageField   |                          |
 
 - Table: **Category**
 
-    | **PK** | id (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | | name | CharField | |
-    | | friendly_name | CharField | |
+  | **PK** | id (unique)   | Type      | Notes |
+  | ------ | ------------- | --------- | ----- |
+  |        | name          | CharField |       |
+  |        | friendly_name | CharField |       |
 
 - Table: **Likes**
 
-    | **PK** | id (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | user | ForeignKey | FK to **User** model |
-    | | designproduct | ForeignKey | FK to **Product** model |
-    | | liked | BooleanField | |
+  | **PK** | id (unique)   | Type         | Notes                   |
+  | ------ | ------------- | ------------ | ----------------------- |
+  | **FK** | user          | ForeignKey   | FK to **User** model    |
+  |        | designproduct | ForeignKey   | FK to **Product** model |
+  |        | liked         | BooleanField |                         |
 
 - Table: **UserComments**
 
-| **PK** | id (unique) | Type | Notes |
-| --- | --- | --- | --- |
-| **FK** | user | ForeignKey | FK to **User** model |
-| | designproduct | ForeignKey | FK to **Product** model |
-| | comment | TextField | |
-| | date_added | DateTimeField | auto_now_add=True |
+| **PK** | id (unique)   | Type          | Notes                   |
+| ------ | ------------- | ------------- | ----------------------- |
+| **FK** | user          | ForeignKey    | FK to **User** model    |
+|        | designproduct | ForeignKey    | FK to **Product** model |
+|        | comment       | TextField     |                         |
+|        | date_added    | DateTimeField | auto_now_add=True       |
 
 - Table: **UserFavorite**
 
-| **PK** | id (unique) | Type | Notes |
-| --- | --- | --- | --- |
-| **FK** | user | ForeignKey | FK to **User** model |
-| | product | ForeignKey | FK to **Product** model |
-
-
+| **PK** | id (unique) | Type       | Notes                   |
+| ------ | ----------- | ---------- | ----------------------- |
+| **FK** | user        | ForeignKey | FK to **User** model    |
+|        | product     | ForeignKey | FK to **Product** model |
 
 ## Agile Development Process
 
@@ -420,9 +414,9 @@ There, I used my own **User Story Template** to manage user stories.
 I've decomposed my Epics into stories prior to prioritizing and implementing them.
 Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
 
-- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
-- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
-- **Could Have**: has small impact if left out (*20% of stories*)
+- **Must Have**: guaranteed to be delivered (_max 60% of stories_)
+- **Should Have**: adds significant value, but not vital (_the rest ~20% of stories_)
+- **Could Have**: has small impact if left out (_20% of stories_)
 - **Won't Have**: not a priority for this iteration
 
 ## Ecommerce Business Model
@@ -474,6 +468,7 @@ Sitemap: https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com/sitemap.xml
 ```
 
 Further links for future implementation:
+
 - [Google search console](https://search.google.com/search-console)
 - [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
 - [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
@@ -495,9 +490,10 @@ The live link can be found here [ CoffeeBeanStudio1809 facebook page ](https://w
 ### Newsletter Marketing
 
 I have incorporate a newsletter sign-up form on my application, to allow users to supply their
-email address if they are interested in learning more. 
+email address if they are interested in learning more.
 
 Option 1 (MailChimp):
+
 - Sign up for a Mailchimp account
 - This allows up to 2,500 subscription email sends per month
 - Incorporate the code and scripts into your project like in the CI lessons.
@@ -508,7 +504,6 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
-
 The live deployed application can be found deployed on [Heroku](https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com).
 
 ### ElephantSQL Database
@@ -516,6 +511,7 @@ The live deployed application can be found deployed on [Heroku](https://coffeebe
 This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
 
 To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+
 - Click **Create New Instance** to start a new database.
 - Provide a name (this is commonly the name of the project: Coffeebeanstudio1809).
 - Select the **Tiny Turtle (Free)** plan.
@@ -539,56 +535,58 @@ Make sure you're on the **AWS Management Console** page.
 - From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
 - From the **Permissions** tab, paste in the following CORS configuration:
 
-	```shell
-	[
-		{
-			"AllowedHeaders": [
-				"Authorization"
-			],
-			"AllowedMethods": [
-				"GET"
-			],
-			"AllowedOrigins": [
-				"*"
-			],
-			"ExposeHeaders": []
-		}
-	]
-	```
+  ```shell
+  [
+  	{
+  		"AllowedHeaders": [
+  			"Authorization"
+  		],
+  		"AllowedMethods": [
+  			"GET"
+  		],
+  		"AllowedOrigins": [
+  			"*"
+  		],
+  		"ExposeHeaders": []
+  	}
+  ]
+  ```
 
 - Copy your **ARN** string.
 - From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
-	- Policy Type: **S3 Bucket Policy**
-	- Effect: **Allow**
-	- Principal: `*`
-	- Actions: **GetObject**
-	- Amazon Resource Name (ARN): **paste-your-ARN-here**
-	- Click **Add Statement**
-	- Click **Generate Policy**
-	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
 
-		```shell
-		{
-			"Id": "Policy1234567890",
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Sid": "Stmt1234567890",
-					"Action": [
-						"s3:GetObject"
-					],
-					"Effect": "Allow",
-					"Resource": "arn:aws:s3:::your-bucket-name/*"
-					"Principal": "*",
-				}
-			]
-		}
-		```
+  - Policy Type: **S3 Bucket Policy**
+  - Effect: **Allow**
+  - Principal: `*`
+  - Actions: **GetObject**
+  - Amazon Resource Name (ARN): **paste-your-ARN-here**
+  - Click **Add Statement**
+  - Click **Generate Policy**
+  - Copy the entire Policy, and paste it into the **Bucket Policy Editor**
 
-	- Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
-	- Click **Save**.
+    ```shell
+    {
+    	"Id": "Policy1234567890",
+    	"Version": "2012-10-17",
+    	"Statement": [
+    		{
+    			"Sid": "Stmt1234567890",
+    			"Action": [
+    				"s3:GetObject"
+    			],
+    			"Effect": "Allow",
+    			"Resource": "arn:aws:s3:::your-bucket-name/*"
+    			"Principal": "*",
+    		}
+    	]
+    }
+    ```
+
+  - Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
+  - Click **Save**.
+
 - From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
-	- If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
+  - If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
 
 #### IAM
 
@@ -596,50 +594,52 @@ Back on the AWS Services Menu, search for and open **IAM** (Identity and Access 
 Once on the IAM page, follow these steps:
 
 - From **User Groups**, click **Create New Group**.
-	- Suggested Name: `group-coffeebeanstudio1809` (group + the project name)
+  - Suggested Name: `group-coffeebeanstudio1809` (group + the project name)
 - Tags are optional, but you must click it to get to the **review policy** page.
 - From **User Groups**, select your newly created group, and go to the **Permissions** tab.
 - Open the **Add Permissions** dropdown, and click **Attach Policies**.
 - Select the policy, then click **Add Permissions** at the bottom when finished.
 - From the **JSON** tab, select the **Import Managed Policy** link.
-	- Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
-	- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
 
-		```shell
-		{
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Effect": "Allow",
-					"Action": "s3:*",
-					"Resource": [
-						"arn:aws:s3:::your-bucket-name",
-						"arn:aws:s3:::your-bucket-name/*"
-					]
-				}
-			]
-		}
-		```
-	
-	- Click **Review Policy**.
-	- Suggested Name: `policy-coffeebeanstudio1809` (policy + the project name)
-	- Provide a description:
-		- "Access to S3 Bucket for coffeebeanstudio1809 static files."
-	- Click **Create Policy**.
+  - Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
+  - You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
+
+    ```shell
+    {
+    	"Version": "2012-10-17",
+    	"Statement": [
+    		{
+    			"Effect": "Allow",
+    			"Action": "s3:*",
+    			"Resource": [
+    				"arn:aws:s3:::your-bucket-name",
+    				"arn:aws:s3:::your-bucket-name/*"
+    			]
+    		}
+    	]
+    }
+    ```
+
+  - Click **Review Policy**.
+  - Suggested Name: `policy-coffeebeanstudio1809` (policy + the project name)
+  - Provide a description:
+    - "Access to S3 Bucket for coffeebeanstudio1809 static files."
+  - Click **Create Policy**.
+
 - From **User Groups**, click your "group-coffeebeanstudio1809".
 - Click **Attach Policy**.
 - Search for the policy you've just created ("policy-coffeebeanstudio1809") and select it, then **Attach Policy**.
 - From **User Groups**, click **Add User**.
-	- Suggested Name: `user-coffeebeanstudio1809` (user + the project name)
+  - Suggested Name: `user-coffeebeanstudio1809` (user + the project name)
 - For "Select AWS Access Type", select **Programmatic Access**.
 - Select the group to add your new user to: `group-coffeebeanstudio1809`
 - Tags are optional, but you must click it to get to the **review user** page.
 - Click **Create User** once done.
 - You should see a button to **Download .csv**, so click it to save a copy on your system.
-	- **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
-	- This contains the user's **Access key ID** and **Secret access key**.
-	- `AWS_ACCESS_KEY_ID` = **Access key ID**
-	- `AWS_SECRET_ACCESS_KEY` = **Secret access key**
+  - **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
+  - This contains the user's **Access key ID** and **Secret access key**.
+  - `AWS_ACCESS_KEY_ID` = **Access key ID**
+  - `AWS_SECRET_ACCESS_KEY` = **Secret access key**
 
 #### Final AWS Setup
 
@@ -657,18 +657,18 @@ Once you've created a Stripe account and logged-in, follow these series of steps
 
 - From your Stripe dashboard, click to expand the "Get your test API keys".
 - You'll have two keys here:
-	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
-	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+  - `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+  - `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
 
 As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
 
 - From your Stripe dashboard, click **Developers**, and select **Webhooks**.
 - From there, click **Add Endpoint**.
-	- `https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com/checkout/wh/`
+  - `https://coffeebeanstudio1809-7c1114e7ca53.herokuapp.com/checkout/wh/`
 - Click **receive all events**.
 - Click **Add Endpoint** to complete the process.
 - You'll have a new key here:
-	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+  - `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
 
 ### Gmail API
 
@@ -686,11 +686,11 @@ Once you've created a Gmail (Google) account and logged-in, follow these series 
 - This might prompt you once again to confirm your password and account.
 - Select **Mail** for the app type.
 - Select **Other (Custom name)** for the device type.
-	- Any custom name, such as "Django" or Coffeebeanstudio1809
+  - Any custom name, such as "Django" or Coffeebeanstudio1809
 - You'll be provided with a 16-character password (API key).
-	- Save this somewhere locally, as you cannot access this key again later!
-	- `EMAIL_HOST_PASS` = user's 16-character API key
-	- `EMAIL_HOST_USER` = user's own personal Gmail email address
+  - Save this somewhere locally, as you cannot access this key again later!
+  - `EMAIL_HOST_PASS` = user's 16-character API key
+  - `EMAIL_HOST_USER` = user's own personal Gmail email address
 
 ### Heroku Deployment
 
@@ -702,44 +702,50 @@ Deployment steps are as follows, after account setup:
 - Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
 - From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
 
-| Key | Value |
-| --- | --- |
-| `AWS_ACCESS_KEY_ID` | user's own value |
-| `AWS_SECRET_ACCESS_KEY` | user's own value |
-| `DATABASE_URL` | user's own value |
-| `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
-| `EMAIL_HOST_PASS` | user's own value |
-| `EMAIL_HOST_USER` | user's own value |
-| `SECRET_KEY` | user's own value |
-| `STRIPE_PUBLIC_KEY` | user's own value |
-| `STRIPE_SECRET_KEY` | user's own value |
-| `STRIPE_WH_SECRET` | user's own value |
-| `USE_AWS` | True |
+| Key                     | Value                                                                |
+| ----------------------- | -------------------------------------------------------------------- |
+| `AWS_ACCESS_KEY_ID`     | user's own value                                                     |
+| `AWS_SECRET_ACCESS_KEY` | user's own value                                                     |
+| `DATABASE_URL`          | user's own value                                                     |
+| `DISABLE_COLLECTSTATIC` | 1 (_this is temporary, and can be removed for the final deployment_) |
+| `EMAIL_HOST_PASS`       | user's own value                                                     |
+| `EMAIL_HOST_USER`       | user's own value                                                     |
+| `SECRET_KEY`            | user's own value                                                     |
+| `STRIPE_PUBLIC_KEY`     | user's own value                                                     |
+| `STRIPE_SECRET_KEY`     | user's own value                                                     |
+| `STRIPE_WH_SECRET`      | user's own value                                                     |
+| `USE_AWS`               | True                                                                 |
 
 Heroku needs two additional files in order to deploy properly.
+
 - requirements.txt
 - Procfile
 
 You can install this project's **requirements** (where applicable) using:
+
 - `pip3 install -r requirements.txt`
 
 If you have your own packages that have been installed, then the requirements file needs updated using:
+
 - `pip3 freeze --local > requirements.txt`
 
 The **Procfile** can be created with the following command:
+
 - `echo web: gunicorn app_name.wsgi > Procfile`
-- *replace **app_name** with the name of your primary Django app name; the folder where settings.py is located*
+- _replace **app_name** with the name of your primary Django app name; the folder where settings.py is located_
 
 For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
 
 Either:
+
 - Select **Automatic Deployment** from the Heroku app.
 
 Or:
+
 - In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
-- Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace _app_name_ with your app name)
 - After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
-	- `git push heroku main`
+  - `git push heroku main`
 
 The project should now be connected and deployed to Heroku!
 
@@ -747,7 +753,8 @@ The project should now be connected and deployed to Heroku!
 
 This project can be cloned or forked in order to make a local copy on your own system.
 
-For either method, you will need to install any applicable packages found within the *requirements.txt* file.
+For either method, you will need to install any applicable packages found within the _requirements.txt_ file.
+
 - `pip3 install -r requirements.txt`.
 
 You will need to create a new file called `env.py` at the root-level,
@@ -773,6 +780,7 @@ os.environ.setdefault("DEBUG", "True")
 ```
 
 Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+
 - Start the Django app: `python3 manage.py runserver`
 - Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
 - Make any necessary migrations: `python3 manage.py makemigrations`
@@ -782,20 +790,21 @@ Once the project is cloned or forked, in order to run it locally, you'll need to
 - Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
 
 If you'd like to backup your database models, use the following command for each model you'd like to create a fixture for:
+
 - `python3 manage.py dumpdata your-model > your-model.json`
-- *repeat this action for each model you wish to backup*
+- _repeat this action for each model you wish to backup_
 
 #### Cloning
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/Alena18/Coffeebeanstudio1809) 
-2. Locate the Code button above the list of files and click it 
+1. Go to the [GitHub repository](https://github.com/Alena18/Coffeebeanstudio1809)
+2. Locate the Code button above the list of files and click it
 3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
-	- `git clone https://github.com/Alena18/Coffeebeanstudio1809.git`
+   - `git clone https://github.com/Alena18/Coffeebeanstudio1809.git`
 7. Press Enter to create your local clone.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
@@ -836,36 +845,34 @@ In Django's settings, the `DEBUG` flag determines whether your application is in
 
 ### Content
 
-| Source | Location | Notes |
-| --- | --- | --- |
-| [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [YouTube](https://www.youtube.com/watch?v=x5XU2aycDNs) | Term and condition page  | tutorial for Terms and Conditions & Privacy Policy Page |
-| [YouTube](https://www.youtube.com/watch?v=x5XU2aycDNs) | Cookie  | tutorial for how to code your own cookie consent popup with JavaScript |
-| [YouTube](https://www.youtube.com/watch?v=x5XU2aycDNs) | Rating  | tutorial for how to make rating |
-| [csestack](https://www.csestack.org/django-sign-up-registration-form/) | Registration  | tutorial for how to create a django signup registration form with database |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| Source                                                                      | Location                | Notes                                                                      |
+| --------------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------- |
+| [Markdown Builder](https://traveltimn.github.io/markdown-builder)           | README and TESTING      | tool to help generate the Markdown files                                   |
+| [Chris Beams](https://chris.beams.io/posts/git-commit)                      | version control         | "How to Write a Git Commit Message"                                        |
+| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site             | responsive HTML/CSS/JS navbar                                              |
+| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)           | contact page            | interactive pop-up (modal)                                                 |
+| [W3Schools](https://www.w3schools.com/css/css3_variables.asp)               | entire site             | how to use CSS :root variables                                             |
+| [Flexbox Froggy](https://flexboxfroggy.com/)                                | entire site             | modern responsive layouts                                                  |
+| [Grid Garden](https://cssgridgarden.com)                                    | entire site             | modern responsive layouts                                                  |
+| [StackOverflow](https://stackoverflow.com/a/2450976)                        | quiz page               | Fisher-Yates/Knuth shuffle in JS                                           |
+| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc)                      | leaderboard             | using `localStorage()` in JS for high scores                               |
+| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y)                      | PP3 terminal            | tutorial for adding color to the Python terminal                           |
+| [YouTube](https://www.youtube.com/watch?v=x5XU2aycDNs)                      | Term and condition page | tutorial for Terms and Conditions & Privacy Policy Page                    |
+| [YouTube](https://www.youtube.com/watch?v=x5XU2aycDNs)                      | Cookie                  | tutorial for how to code your own cookie consent popup with JavaScript     |
+| [YouTube](https://www.youtube.com/watch?v=x5XU2aycDNs)                      | Rating                  | tutorial for how to make rating                                            |
+| [csestack](https://www.csestack.org/django-sign-up-registration-form/)      | Registration            | tutorial for how to create a django signup registration form with database |
+| [strftime](https://strftime.org)                                            | CRUD functionality      | helpful tool to format date/time from string                               |
+| [WhiteNoise](http://whitenoise.evans.io)                                    | entire site             | hosting static files on Heroku temporarily                                 |
 
 ### Media
 
 I used for background free media
 
-| Source | Location | Type | Notes |
-| --- | --- | --- | --- |
+| Source                                              | Location  | Type       | Notes                    |
+| --------------------------------------------------- | --------- | ---------- | ------------------------ |
 | [Unsplash](https://unsplash.com/photos/Y_LgXwQEx2c) | home page | background | Photo by Mika Baumeister |
 
-
 ### Acknowledgements
-
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
