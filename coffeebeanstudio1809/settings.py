@@ -31,7 +31,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 # DEBUG = True
 
-ALLOWED_HOSTS = ['coffeebeanstudio1809-7c1114e7ca53.herokuapp.com',
+ALLOWED_HOSTS = ['127.0.0.1', 'coffeebeanstudio1809.onrender.com', 'coffeebeanstudio1809-7c1114e7ca53.herokuapp.com',
                  '8000-alena18-coffeebeanstudio-3i6ugxkqgl.us2.codeanyapp.com',
                  'localhost'
                  ]
